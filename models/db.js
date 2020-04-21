@@ -11,4 +11,3 @@ mongoose.connect(uri,
     }
 });
 
-require('./cafe.js');

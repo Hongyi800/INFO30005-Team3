@@ -8,12 +8,4 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/get-data', cafeController.findAllCafes);
-
-router.post('/insert', cafeController.createCafe);
-
-router.post('/update', cafeController.updateCafe);
-
-router.post('/delete', cafeController.deleteCafe);
-
 module.exports = router;
