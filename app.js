@@ -76,7 +76,7 @@ function addEvent(func) {
 }
 
 function getMessage() {
-  var btn = document.getElementById("btn1");
+  var comBtn = document.getElementById("btn1");
   var message = document.getElementById("message");
   var name = document.getElementById("name");
   var nameValue="";
@@ -90,7 +90,7 @@ function getMessage() {
     message.value = "";
   }
 
-  btn.onclick = function () {
+  comBtn.onclick = function () {
     messageValue = messageValue || "Comment board";
     nameValue = name.value || "new user";
     var messageList = document.createElement("messageList");
