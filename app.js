@@ -62,6 +62,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
+//add value of the event into variable preonload
 function addEvent(func) {
   var preonload = window.onload;
 
@@ -75,33 +76,34 @@ function addEvent(func) {
   }
 }
 
-// function getMessage() {
-//   //var comBtn = document.getElementById("btn1");
-//   var message = document.getElementById("message");
-//   var name = document.getElementById("name");
-//   var nameValue = "";
-//   var messageValue = "";
-//
-//   name.onfocus = function () {
-//     name.value = "";
-//   };
-//
-//   message.onfocus = function () {
-//     message.value = "";
-//   };
-//
-//   comBtn.onclick = function () {
-//     messageValue = messageValue || "Comment Board";
-//     nameValue = name.value || "new user";
-//     var messageList = document.createElement("messageList");
-//     var messageDiv = document.createElement("div");
-//     var messageText = document.createElement(nameValue + ": " + messageValue);
-//
-//     messageDiv.appendChild(messageText);
-//     messageList.appendChild(messageDiv);
-//   }
-// }
-// addEvent(getMessage());
+//receive the comment
+function getMessage() {
+  var comBtn = document.getElementById("btn1");
+  var message = document.getElementById("message");
+  var name = document.getElementById("name");
+  var nameValue = "";
+  var messageValue = "";
+
+  name.onfocus = function () {
+    name.value = "";
+  }
+
+  message.onfocus = function () {
+    message.value = "";
+  }
+
+  comBtn.onclick = function () {
+    messageValue = message.value || "Comment Board";
+    nameValue = name.value || "new user";
+    var messageList = document.getElementById("messageList");
+    var messageDiv = document.createElement("div");
+    var messageText = document.createTextNode(nameValue + ": " + messageValue);
+
+    messageDiv.appendChild(messageText);
+    messageList.appendChild(messageDiv);
+  }
+}
+addEvent(getMessage());
 
 module.exports = app;
 
