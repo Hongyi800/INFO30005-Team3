@@ -8,7 +8,7 @@
 <style>
     * {
         padding: 0;
-        magin: 0;
+        margin: 0;
         list-style: none;
     }
     #box{
@@ -32,7 +32,7 @@
 </style>
 <body>
     <div id="box">
-        <input type="text" name="" id="t1">
+        <label for="res"></label><input type="text" name="Comment Here" id="res">
         <input type="button" value="send" id="btn">
 
         <ul>
@@ -43,7 +43,7 @@
     </div>
 </body>
 <script>
-    var oT=document.getElementById('t1');
+    var oT=document.getElementById('res');
     var oBtn=document.getElementById('btn');
     var oUl=document.querySelector('ul');
 
@@ -55,7 +55,7 @@
         }else{
             //save comments
             var oLi=document.createElement('li');
-            oLi.innerHTML=answer+'a href="javaScript::">delete</a>';
+            oLi.innerHTML=answer+'a href="javaScript:;">delete</a>';
             //add new comments at the beginning
             oUl.insertBefore(oLi,oUl.children[0]);
             oT.value='';
