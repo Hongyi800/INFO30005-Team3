@@ -2,10 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Comment List</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    {{{ body }}}
+    <!--<script>-->
+    <!--    function comment() {-->
+    <!--        alert('Comment here');-->
+    <!--    }-->
+
+    <!--    window.onload=function() {-->
+    <!--        document.getElementById('sentence').click();-->
+    <!--    };-->
+    <!--</script>-->
+    <!--<button type="button" id="sentence" onclick="comment()">write comment</button>-->
+
+    <div id="box">
+        <input type="text" name="" id="t1">
+        <input type="button" value="Comment here" id="btn">
+
+        <ul>
+
+        </ul>
+    </div>
 </body>
+
+<script>
+    var oT=document.getElementById('t1');
+    var btn=document.getElementById('btn');
+    var oU1=document.querySelector('ul');
+
+    btn.onclick=function() {
+        var answer=oT.value();
+
+        if(answer=='') {
+            alert("Please write something.");
+        }else{
+            //save comments
+            var oLi=document.createElement('li');
+            oLi.innerHTML=answer+'a href="javaScript::">delete</a>';
+            //add new comments at the beginning
+            oU1.insertBefore(Oli,oU1.children[0]);
+        }
+        var del=document.querySelector('a');
+        del.onclick=function () {
+            if(wnidow.confirm("Are you sure to delete?")){
+                oU1.removeChild(oLi);
+            }
+        }
+    }
+</script>
 </html>

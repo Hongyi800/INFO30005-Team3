@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var cafeController = require('../controllers/cafe-controller.js');
+var cafeController = require('../controllers/controller.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
