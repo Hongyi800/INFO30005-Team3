@@ -5,20 +5,34 @@
     <h1>Coronavirus defenders</h1>
     <link rel="stylesheets" href="public/stylesheets/style.css">
 </head>
+<style>
+    * {
+        padding: 0;
+        magin: 0;
+        list-style: none;
+    }
+    #box{
+        width: 240px;
+        margin: 100px auto;
+    }
+    ul{
+        margin-top: 20px;
+    }
+    li{
+        width: 240px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px #3498db;
+        margin-top: 20px;
+    }
+    a{
+        float: right;
+        text-decoration: none;
+    }
+</style>
 <body>
-    <!--<script>-->
-    <!--    function comment() {-->
-    <!--        alert('Comment here');-->
-    <!--    }-->
-
-    <!--    window.onload=function() {-->
-    <!--        document.getElementById('sentence').click();-->
-    <!--    };-->
-    <!--</script>-->
-    <!--<button type="button" id="sentence" onclick="comment()">write comment</button>-->
-
     <div id="box">
-        <label for="t1"></label><input type="text" name="" id="t1">
+        <input type="text" name="" id="t1">
         <input type="button" value="send" id="btn">
 
         <ul>
