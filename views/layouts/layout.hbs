@@ -42,13 +42,12 @@
         </ul>
     </div>
 </body>
-
 <script>
     var oT=document.getElementById('t1');
-    var btn=document.getElementById('btn');
-    var oU1=document.querySelector('ul');
+    var oBtn=document.getElementById('btn');
+    var oUl=document.querySelector('ul');
 
-    btn.onclick=function() {
+    oBtn.onclick=function() {
         var answer=oT.value();
 
         if(answer==='') {
@@ -58,12 +57,13 @@
             var oLi=document.createElement('li');
             oLi.innerHTML=answer+'a href="javaScript::">delete</a>';
             //add new comments at the beginning
-            oU1.insertBefore(Oli,oU1.children[0]);
+            oUl.insertBefore(oLi,oUl.children[0]);
+            oT.value='';
         }
         var del=document.querySelector('a');
         del.onclick=function () {
-            if(wnidow.confirm("Are you sure to delete?")){
-                oU1.removeChild(oLi);
+            if(window.confirm("Are you sure to delete?")){
+                oUl.removeChild(oLi);
             }
         }
     }
