@@ -62,5 +62,46 @@ app.use(function(err, req, res, next) {
   });
 });
 
+function addEvent(func) {
+  var preonload = window.onload;
+
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function () {
+      preonload();
+      func();
+    }
+  }
+}
+
+function getMessage() {
+  var btn = document.getElementById("btn1");
+  var message = document.getElementById("message");
+  var name = document.getElementById("name");
+  var nameValue="";
+  var messageValue="";
+
+  name.onfocus = function () {
+    name.value = "";
+  }
+
+  message.onfocus = function () {
+    message.value = "";
+  }
+
+  btn.onclick = function () {
+    messageValue = messageValue || "Comment board";
+    nameValue = name.value || "new user";
+    var messageList = document.createElement("messageList");
+    var messageDiv = document.createElement("div");
+    var messageText = document.createElement(nameValue+ ": "+messageValue);
+
+    messageDiv.appendChild(messageText);
+    messageList.appendChild(messageDiv);
+  }
+}
+
+addEvent(getMessage());
 
 module.exports = app;

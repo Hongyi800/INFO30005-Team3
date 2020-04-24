@@ -1,71 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <h1>Coronavirus defenders</h1>
-    <link rel="stylesheets" href="public/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+    <script type="text/javascript" src="app.js"></script>
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-    #box{
-        width: 240px;
-        margin: 100px auto;
-    }
-    ul{
-        margin-top: 20px;
-    }
-    li{
-        width: 240px;
-        height: 50px;
-        line-height: 50px;
-        border-bottom: 1px #3498db;
-        margin-top: 20px;
-    }
-    a{
-        float: right;
-        text-decoration: none;
-    }
-</style>
 <body>
-    <div id="box">
-        <label for="res"></label><input type="text" name="Comment Here" id="res">
-        <input type="button" value="send" id="btn">
-
-        <ul>
-
-
-
-        </ul>
+    <div class="box">
+       <div class="content">
+           <div class="text">
+               <label for="message">comment list</label>
+           </div>
+           <div class="text" style="margin-left:-75px">
+               <label for "name">name: </label>
+               <input type="text" id="name" value="name" class="txt">
+           </div>
+           <div class="text">
+               <textarea rows="5" cols="30" id="message" value="" class="txt">
+               </textarea>
+           </div>
+           <div class="btn">
+               <button id="btn1">send</button>
+           </div>
+       </div>
+        <h3 style="clear:right">Comment list</h3>
+        <hr/>
+        <div class="messageList" id="messageList">
+        </div>
     </div>
 </body>
-<script>
-    var oT=document.getElementById('res');
-    var oBtn=document.getElementById('btn');
-    var oUl=document.querySelector('ul');
-
-    oBtn.onclick=function() {
-        var answer=oT.value();
-
-        if(answer==='') {
-            alert("Please write something.");
-        }else{
-            //save comments
-            var oLi=document.createElement('li');
-            oLi.innerHTML=answer+'a href="javaScript:;">delete</a>';
-            //add new comments at the beginning
-            oUl.insertBefore(oLi,oUl.children[0]);
-            oT.value='';
-        }
-        var del=document.querySelector('a');
-        del.onclick=function () {
-            if(window.confirm("Are you sure to delete?")){
-                oUl.removeChild(oLi);
-            }
-        }
-    }
-</script>
 </html>
