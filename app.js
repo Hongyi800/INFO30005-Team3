@@ -14,8 +14,6 @@ require('./models/db.js');
 
 var routes = require('./routes/index');
 
-
-
 var app = express();
 
 // view engine setup
