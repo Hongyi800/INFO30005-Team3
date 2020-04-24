@@ -1,18 +1,19 @@
 {
-  "name": "mylibraryapp",
-  "version": "1.0.0",
-  "description": "Library App project for workshops in INFO30005",
-  "main": "app.js",
+  "name": "05-express-first-app",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "Ronal Singh and Steven Tang",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.9"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "express-handlebars": "^4.0.0",
+    "mongoose": "^5.9.6",
+    "morgan": "~1.6.1",
+    "npm-check-updates": "^4.1.0",
+    "serve-favicon": "~2.3.0"
   }
 }

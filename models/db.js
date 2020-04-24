@@ -1,8 +1,6 @@
-const mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
-// Connect to MongoDB
 const uri = "mongodb+srv://hgu3:Ghy123456@cluster0-vyh1u.mongodb.net/test?retryWrites=true&w=majority";
-
 
 mongoose.connect(uri,
     function(err){
@@ -13,4 +11,3 @@ mongoose.connect(uri,
     }
 });
 
-//require("./author");
