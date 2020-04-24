@@ -1,108 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <h1>Coronavirus defenders</h1>
-    <link rel="stylesheets" href="public/stylesheets/style.css">
+    <title>Coronavirus defenders</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-    #box{
-        width: 240px;
-        margin: 100px auto;
-    }
-    ul{
-        margin-top: 20px;
-    }
-    li{
-        width: 240px;
-        height: 50px;
-        line-height: 50px;
-        border-bottom: 1px #3498db;
-        margin-top: 20px;
-    }
-    a{
-        float: right;
-        text-decoration: none;
-    }
-</style>
+<h1>Coronavirus defenders</h1>
 <body>
-<<<<<<< HEAD
-    <!--<script>-->
-    <!--    function comment() {-->
-    <!--        alert('Comment here');-->
-    <!--    }-->
-
-    <!--    window.onload=function() {-->
-    <!--        document.getElementById('sentence').click();-->
-    <!--    };-->
-    <!--</script>-->
-    <!--<button type="button" id="sentence" onclick="comment()">write comment</button>-->
-
-    <div id="box">
-        <label for="t1"></label><input type="text" name="" id="t1">
-=======
-    <div id="box">
-        <label for="res"></label><input type="text" name="Comment Here" id="res">
->>>>>>> 8b17cfe8f3a5cdd23bfc339552f98e998d767a8b
-        <input type="button" value="send" id="btn">
-
-        <ul>
-
-
-
-        </ul>
+<div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+        <input type="text" placeholder="Username" name="" value="">
     </div>
+
+    <div class="textbox">
+        <input type="password" placeholder="Password" name="" value="">
+    </div>
+    <input class="btn" type="button" name="" value="Sign in">
+</div>
 </body>
-<<<<<<< HEAD
-
-<script>
-    var oT=document.getElementById('t1');
-    var btn=document.getElementById('btn');
-    var oU1=document.querySelector('ul');
-
-    btn.onclick=function() {
-=======
-<script>
-    var oT=document.getElementById('res');
-    var oBtn=document.getElementById('btn');
-    var oUl=document.querySelector('ul');
-
-    oBtn.onclick=function() {
->>>>>>> 8b17cfe8f3a5cdd23bfc339552f98e998d767a8b
-        var answer=oT.value();
-
-        if(answer==='') {
-            alert("Please write something.");
-        }else{
-            //save comments
-            var oLi=document.createElement('li');
-<<<<<<< HEAD
-            oLi.innerHTML=answer+'a href="javaScript::">delete</a>';
-            //add new comments at the beginning
-            oU1.insertBefore(Oli,oU1.children[0]);
-        }
-        var del=document.querySelector('a');
-        del.onclick=function () {
-            if(wnidow.confirm("Are you sure to delete?")){
-                oU1.removeChild(oLi);
-=======
-            oLi.innerHTML=answer+'a href="javaScript:;">delete</a>';
-            //add new comments at the beginning
-            oUl.insertBefore(oLi,oUl.children[0]);
-            oT.value='';
-        }
-        var del=document.querySelector('a');
-        del.onclick=function () {
-            if(window.confirm("Are you sure to delete?")){
-                oUl.removeChild(oLi);
->>>>>>> 8b17cfe8f3a5cdd23bfc339552f98e998d767a8b
-            }
-        }
-    }
-</script>
 </html>
