@@ -82,6 +82,12 @@ body{
   height: 100%;
 }
 
+.comTxt{
+  color: #95a5a6;
+  opacity: 0.8;
+  filter: alpha(opacity=0.8);
+}
+
 .txt{
   color: #95a5a6;
   opacity: 0.8;
