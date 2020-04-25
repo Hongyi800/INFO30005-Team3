@@ -24,14 +24,14 @@ function getMessage() {
 
     name.onfocus = function () {
         name.value = "";
-    };
+    }
 
     message.onfocus = function () {
         message.value = "";
-    };
+    }
 
     comBtn.onclick = function () {
-        messageValue = message.value || "Comment Board";
+        messageValue = message.value || "My comment: ";
         nameValue = name.value || "new user";
         var messageList = document.getElementById("messageList")
         var messageDiv = document.createElement("div");
