@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 var countryController = require('../controllers/countryController.js');
-var myController = require("../controllers/controller.js");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
