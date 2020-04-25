@@ -64,12 +64,13 @@ body{
 
 .box{
   width: 400px;
+  text-align: justify;
   height: auto;
 }
 
 .text{
   text-align: justify;
-  margin-bottom: auto;
+  margin-bottom: 25px;
 }
 
 .comBtn{
