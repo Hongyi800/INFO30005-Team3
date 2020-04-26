@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-//const Country = mongoose.model('country');
+const Country = mongoose.model('country');
 
 // function to handle a request to get all authors
 const getAllCountry = async (req, res) => {
