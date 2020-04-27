@@ -4,7 +4,7 @@ const express = require("express");
 const commentRouter = express.Router();
 
 // load/import the author controller
-const commentController = require("../controllers/informationController.js");
+const commentController = require("../controllers/CommentController.js");
 
 // handle the GET request on root of the author-management path
 // i.e. get all authors
