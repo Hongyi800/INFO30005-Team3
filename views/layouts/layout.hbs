@@ -12,6 +12,7 @@
     <div class="text">
         <label for="message">comment here</label>
     </div>
+    <form method="post" action="addComments">
     <div class="text">
         <label for="name">name: </label>
         <input type="text" id="name" value="new user" class="comTxt">
@@ -20,8 +21,9 @@
         <input type="text" id="message" value="..." class="comTxt">
     </div>
     <div class="comBtn">
-        <button id="btn1">send</button>
+        <button id="btn1" type="submit">send</button>
     </div>
+    </form>
     <h3 style="clear:right">Comment List</h3>
     <hr/>
     <div class="messageList" id="messageList">
