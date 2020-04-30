@@ -17,8 +17,20 @@ var routes = require('./routes/index');
 var app = express();
 
 // view engine setup
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
-//app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views'}));
+//app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
+app.get("/", (req,res) => {
+  res.sendfile("layout.hbs", {
+    root: path.join(__dirname, "../views/")
+  })
+})
+
+app.get("/login", (req,res) => {
+  res.sendfile("login.hbs", {
+    root: path.join(__dirname, "../views/")
+  })
+})
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
