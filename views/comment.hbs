@@ -1,6 +1,30 @@
 <!doctype html>
 <html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Comments</title>
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
 <body>
-<h1>comment here</h1>
+<div class="box">
+    <div class="text">
+        <label for="message">comment here</label>
+    </div>
+    <div class="text">
+        <label for="name">name: </label>
+        <input type="text" id="name" value="new user" class="comTxt">
+    </div>
+    <div class="text">
+        <input type="text" id="message" value="" class="comTxt">
+    </div>
+    <div class="comBtn">
+        <button id="btn1">send</button>
+    </div>
+    <h3 style="clear:right">Comment List</h3>
+    <hr/>
+    <div class="messageList" id="messageList">
+    </div>
+</div>
 </body>
 </html>

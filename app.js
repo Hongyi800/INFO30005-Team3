@@ -21,9 +21,6 @@ app.engine('hbs', hbs.express4({
 app.set("view engine","hbs");
 
 
-
-
-
 // GET home page
 app.get("/", (req, res) => {
   res.render("index");

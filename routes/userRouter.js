@@ -9,14 +9,14 @@ const userRouter = express.Router();
 const userController = require("../controllers/userController.js");
 
 // load/import the route controller
-const routeController = require("../controllers/routeController.js");
+const routeController = require("../controllers/routerController.js");
 
 // handle the GET request on root of the user-management path
 // i.e. get all authors
 userRouter.get("/", (req, res) => userController.getAllUsers(req, res));
 
 // handle the login function
-userRouter.post("/loginfun", urlencodedParser, function(req, res){
+userRouter.post("/loginfun", urlencodedParser, function(req, res) {
     routeController.userLogin(req,res);
 });
 
