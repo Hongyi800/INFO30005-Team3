@@ -18,7 +18,3 @@ exports.renderInformationPage = (req, res) =>{
 exports.renderCommentPage = (req, res) =>{
     res.render("comment");
 };
-
-exports.renderCommentPage = (req, res) =>{
-    res.render("comment");
-};
