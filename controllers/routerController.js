@@ -1,5 +1,5 @@
 // Function to handle a request to a particular user
-var users = require("../models/user")
+var users = require("../models/user");
 
 // use username and password from database to login
 const userLogin = (req, res) => {
@@ -20,7 +20,7 @@ const userLogin = (req, res) => {
             res.send({status:400, message:"Incorrect username or password!", url:""})
         }
     }
-}
+};
 
 
 // remember to export the functions

@@ -8,9 +8,6 @@ exports.renderLoginPage = (req, res) =>{
 };
 
 
-
-
-
 //add value of the event into variable preOnload
 // function addEvent(func) {
 //     var preOnload = window.onload;
