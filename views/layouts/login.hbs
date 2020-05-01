@@ -5,6 +5,12 @@
     <title>Coronavirus defenders</title>
     <link rel="stylesheet" href="public/stylesheets/style.css">
 </head>
+<script>
+    // function that jump to the Homepage
+    function returnMainPage(){
+        window.location.href="/";
+    }
+</script>
 <h1>User Login</h1>
 <body>
 <div class="login-box">
@@ -17,6 +23,9 @@
         <input type="password" placeholder="Password" name="" value="">
     </div>
     <input class="btn" type="button" name="" value="Sign in">
+    <div id="Footer" style="background-color: cornflowerblue; clear: both; text-align: center;">
+        <botton onclick="returnMainPage()">Homepage</botton>
+    </div>
 </div>
 </body>
 </html>
