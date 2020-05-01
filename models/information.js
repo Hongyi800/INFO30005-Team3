@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+          const mongoose = require("mongoose");
 
 const informarionSchema = new mongoose.Schema({
   info_id: String,
