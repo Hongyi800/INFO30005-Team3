@@ -96,3 +96,9 @@ body{
   cursor: pointer;
   margin: 12px 0;
 }
+
+#footer{
+  clear: both;
+  text-align: center;
+  background-color: cornflowerblue;
+}

@@ -15,6 +15,9 @@ exports.renderInformationPage = (req, res) =>{
     res.render("information");
 };
 
+exports.renderCommentPage = (req, res) =>{
+    res.render("comment");
+};
 
 exports.renderCommentPage = (req, res) =>{
     res.render("comment");
