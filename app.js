@@ -1,5 +1,5 @@
 const express = require("express");
-const hbs  = require('express-hbs');
+const hbs = require('express-hbs');
 const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
@@ -33,12 +33,6 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-// handle author-management related requests
-// first import the author router
-//const authorRouter = require("./routes/authorRouter");
-
-// the author routes are added onto the end of '/author-management'
-//app.use("/author-management", authorRouter);
 
 // start app and listen for incoming requests on port
 app.listen(process.env.PORT || 3000, () => {
@@ -78,38 +72,38 @@ app.listen(process.env.PORT || 3000, () => {
 // app.use(express.static(path.join(__dirname, 'public')));
 //
 // app.use('/', routes);
-//
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   var err = new Error('Not Found');
-//   err.status = 404;
-//   next(err);
-// });
-//
-// // error handlers
-//
-// // development error handler
-// // will print stacktrace
-// if (app.get('env') === 'development') {
-//   app.use(function(err, req, res, next) {
-//     res.status(err.status || 500);
-//     res.render('error', {
-//       message: err.message,
-//       error: err
-//     });
-//   });
-// }
-// //
-// // production error handler
-// // no stacktraces leaked to user
-// app.use(function(err, req, res, next) {
-//   res.status(err.status || 500);
-//   res.render('error', {
-//     message: err.message,
-//     error: {}
-//   });
-// });
-// //
-// //
-// module.exports = app;
-// //
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+
+
+module.exports = app;
