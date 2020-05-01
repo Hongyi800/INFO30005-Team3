@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("views","views");
 app.engine('hbs', hbs.express4({
   partialsDir   : __dirname +'/views',
-  defaultLayout : __dirname +'/views/layouts/main',
+//  defaultLayout : __dirname +'/views/layouts/main',
   extname       : '.hbs',
   layoutsDir    : __dirname +'/views/layouts',
 }));
@@ -42,7 +42,7 @@ app.get("/login", (req, res) => {
 
 // start app and listen for incoming requests on port
 app.listen(process.env.PORT || 3000, () => {
-  console.log("The library app is running!");
+  console.log("The library is running!");
 });
 
 
