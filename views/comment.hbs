@@ -1,28 +1,138 @@
-<!doctype html>
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta http-equiv="content-type" content="text/html;charset=UTF-8">-->
+<!--    <title>Comments</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="comBox">-->
+<!--    <div class="text">-->
+<!--        <label for="message">comment here</label>-->
+<!--    </div>-->
+<!--    <div class="text">-->
+<!--        <label for="name">name: </label>-->
+<!--        <input type="text" id="name" value="new user" class="comTxt">-->
+<!--    </div>-->
+<!--    <div class="text">-->
+<!--        <input type="text" id="message" value="" class="comTxt">-->
+<!--    </div>-->
+<!--    <div class="comBtn">-->
+<!--        <button id="btn1">send</button>-->
+<!--    </div>-->
+<!--    <h3 style="clear:right">Comment List</h3>-->
+<!--    <hr/>-->
+<!--    <div class="messageList" id="messageList">-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <title>Comments</title>
+    <meta charset="UTF-8">
+    <title>Comment Board</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        h4 {
+            height: 40px;
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 1px solid black;
+            line-height: 40px;
+        }
+
+        ul {
+            width: 600px;
+            /*height:80px;*/
+            padding:20px 0;
+            /*padding: 40px 0;*/
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        ul li {
+            width: 600px;
+            height: 40px;
+            position: relative;
+            list-style:none;
+            cursor: pointer;
+            text-indent:1em;
+        }
+
+        ul li p {
+            float: left
+        }
+
+        ul li .p3 {
+            position: absolute;
+            right: 0;
+            top: -20px;
+            display: none;
+        }
+
+        textarea {
+            width: 600px;
+            height: 50px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 600px;
+            height: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-<div class="comBox">
-    <div class="text">
-        <label for="message">comment here</label>
-    </div>
-    <div class="text">
-        <label for="name">name: </label>
-        <input type="text" id="name" value="new user" class="comTxt">
-    </div>
-    <div class="text">
-        <input type="text" id="message" value="" class="comTxt">
-    </div>
-    <div class="comBtn">
-        <button id="btn1">send</button>
-    </div>
-    <h3 style="clear:right">Comment List</h3>
-    <hr/>
-    <div class="messageList" id="messageList">
-    </div>
-</div>
+<h4>Comment List</h4>
+<ul id='ul'>
+    <span id="oSpan">Please write..</span>
+</ul>
+<textarea id="te"></textarea><br />
+<input type="button" value="commment: " id='obt'>
 </body>
+<script>
+    window.οnlοad=function() {
+        var otext = document.getElementById('te');
+        var index = 0;
+        obt.onclick = function () {
+            index++;
+            oTex = otext.value;
+            if (oTex !== '') {
+                oLi = document.createElement('li');
+                ul.appendChild(oLi);
+                oLi.innerHTML = index+oTex;
+                oSpan.style.display = 'none';
+                otext.value = '';
+
+                oLi.onclick = function () {
+                    this.parentNode.removeChild(this);
+                };
+
+                oLi.onmouseover = function () {
+                    this.style.background='#f2f2f2';
+                    oP = document.createElement('p');
+                    this.appendChild(oP);
+                    oP.innerHTML = 'Are you sure to delete?';
+                    oP.className = 'p3';
+                    oP.style.display = 'block';
+                };
+
+                oLi.onmouseout = function () {
+                    this.style.background='';
+                    this.removeChild(this.children[0]);
+                }
+            }
+        }
+    }
+</script>
 </html>
