@@ -40,6 +40,7 @@ const getMessage = () => {
     }
 };
 
+addEvent(getMessage());
 
 module.exports = {
     addEvent,
