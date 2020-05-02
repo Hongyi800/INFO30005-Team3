@@ -11,6 +11,7 @@ router.get("/login", controller.renderLoginPage);
 router.get("/comment", controller.renderCommentPage);
 
 router.get("/country", controller.renderWorldMapPage);
+router.post("/", controller.getCountry);
 
 router.get("/information", controller.renderInformationPage);
 
