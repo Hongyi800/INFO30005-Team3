@@ -10,23 +10,24 @@
 <div class="body"></div>
     <div class="grad"></div>
     <div class="header">
-    <div>Please<span>Subscribe</span></div>
+    <div>Please<span>Enter your username and password</span></div>
     </div>
     <br>
     <form name="login">
         <div class="login">
             <label>
-                <input type="text" placeholder="Username or Email" name="userid" value="">
+                <input type="text" placeholder="Username or Email" name="userid" value=""><br>
             </label>
             <label>
-                <input type="password" placeholder="Password" name="pswrd" value="">
+                <input type="password" placeholder="Password" name="pswrd" value=""><br>
             </label>
             <input type="button" onclick="check(this.form)" name="" value="Sign in"/>
         </div>
     </form>
 <script>
     function check(form){
-        if(form.userid.value === "myuserid" && form.pswrd.value === "mypswrd"){
+        if(form.userid.value === "user" && form.pswrd.value === "12345"){
+            alert("Login successfully")
             window.open('https://info30005-assi2.herokuapp.com/')
         }else{
             alert("Error username or password")
