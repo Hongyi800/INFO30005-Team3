@@ -1,21 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Coronavirus defenders</title>
 </head>
 <h1>User Login</h1>
-<body>
-<div class="login-box">
-    <h1>Login</h1>
-    <div class="textbox">
-        <input type="text" placeholder="Username" name="" value="">
-    </div>
 
-    <div class="textbox">
-        <input type="password" placeholder="Password" name="" value="">
+<body oncontextmenu="return false">
+<div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+    <div>Please<span>Subscribe</span></div>
     </div>
-    <input class="btn" type="button" name="" value="Sign in">
-</div>
+    <br>
+    <form name="login">
+        <div class="login">
+            <label>
+                <input type="text" placeholder="Username or Email" name="userid" value="">
+            </label>
+            <label>
+                <input type="password" placeholder="Password" name="pswrd" value="">
+            </label>
+            <input type="button" onclick="check(this.form)" name="" value="Sign in"/>
+        </div>
+    </form>
+<script>
+    function check(form){
+        if(form.userid.value === "myuserid" && form.pswrd.value === "mypswrd"){
+            window.open('https://info30005-assi2.herokuapp.com/')
+        }else{
+            alert("Error username or password")
+        }
+    }
+</script>
 </body>
 </html>
