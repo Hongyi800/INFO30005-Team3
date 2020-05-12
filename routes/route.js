@@ -17,3 +17,4 @@ router.post("/", controller.getCountry);
 router.get("/information", controller.renderInformationPage);
 
 module.exports = router;
+

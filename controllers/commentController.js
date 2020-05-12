@@ -8,3 +8,4 @@ const getAllComments = (req, res) => {
 module.exports = {
     getAllComments
 }
+
