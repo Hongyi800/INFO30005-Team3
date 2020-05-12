@@ -1,16 +1,12 @@
-const mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
-// Connect to MongoDB -- replace with your own string
-CONNECTION_STRING = "mongodb+srv://yuxin:<password>@cluster0-zskbc.mongodb.net/test?retryWrites=true&w=majority";
-MONGO_URL = CONNECTION_STRING.replace("<password>",process.env.MONGO_PASSWORD);
+const uri = "mongodb+srv://hgu3:Ghy123456@cluster0-vyh1u.mongodb.net/test?retryWrites=true&w=majority";
 
-console.log(MONGO_URL);
-
-const db = mongoose.connection;
-db.on("error", err => {
-    console.error(err);
-    process.exit(1);
-});
-db.once("open", async () => {
-    console.log("Mongo connection started on " + db.host + ":" + db.port);
-});
+mongoose.connect(uri,
+    function(err){
+        if(!err){
+            console.log('Connected to mongo.');
+        }else{
+            console.log('Failed to connect to mongo!', err);
+        }
+    });
