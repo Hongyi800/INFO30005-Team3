@@ -22,3 +22,4 @@ exports.renderCommentPage = (req, res) =>{
 exports.getCountry = (req, res) =>{
     res.send(`It is currently 0 confirmed cases in ${req.body.country}.`);
 };
+
