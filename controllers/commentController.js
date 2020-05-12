@@ -5,6 +5,6 @@ const comment = [
 
 
 for(let i=0; i<comment.length; i++){
-    const html = "<div class='commentBox'><div class='leftPanelImg'></div><div class='rightPanel'><span>"+comment[i].name+"</span><div class='date'>"+comment[i].date+"</div><p>"+comment[i].body+"</p></div><div class='clear'></div></div>"
-    $('#container').append(html);
+    // const html = "<div class='commentBox'><div class='leftPanelImg'></div><div class='rightPanel'><span>"+comment[i].name+"</span><div class='date'>"+comment[i].date+"</div><p>"+comment[i].body+"</p></div><div class='clear'></div></div>"
+    //  $('#container').append(html);
 }

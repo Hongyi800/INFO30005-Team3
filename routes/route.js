@@ -14,7 +14,7 @@ router.get("/comment", controller.renderCommentPage);
 router.get("/country", controller.renderWorldMapPage);
 router.post("/", controller.getCountry);
 
-router.post("/comment", comment.addEvent(comment.getMessage()));
+
 
 router.get("/information", controller.renderInformationPage);
 
