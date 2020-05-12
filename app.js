@@ -2,7 +2,7 @@ const express = require("express");
 const ejs = require('ejs');
 const bodyParser = require("body-parser");
 const app = express();
-const path = require("path");
+const path = require('path');
 
 const router = require("./routes/route");
 
