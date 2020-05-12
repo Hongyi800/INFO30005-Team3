@@ -8,7 +8,7 @@ router.get("/", controller.renderHomePage);
 
 router.get("/login", controller.renderLoginPage);
 
-router.get("/comment", controller.renderCommentPage);
+// router.get("/comment", controller.renderCommentPage);
 
 router.get("/country", controller.renderWorldMapPage);
 router.post("/", controller.getCountry);

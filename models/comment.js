@@ -1,13 +1,9 @@
-const mongoose = require("mongoose");
-var Schema = mongoose.Schema;
 
-const commentSchema = new Schema({
-  comment_id: String,
-  commenter: String,
-  publish_date: String,
-  publish_time: String,
-  content: String,
-});
+const Comment = [
+  {"name": "Hongyi", "date": "10 Apr,2020", "body": "this is comment 1"},
+  {"name": "Yuxin", "date": "8 Apr,2020", "body": "this is comment 2"},
+  {"name": "Jing", "date": "6 Apr,2020", "body": "this is comment 3"}
+]
 
-const Comment = mongoose.model("comment", commentSchema);
+
 module.exports = Comment;

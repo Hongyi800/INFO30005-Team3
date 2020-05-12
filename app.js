@@ -5,6 +5,7 @@ const app = express();
 const path = require('path');
 
 const router = require("./routes/route");
+const commentRouter = require("./routes/commentRouter");
 
 require('./models/db.js');
 
@@ -19,12 +20,12 @@ app.set('view engine', 'html');
 app.use(express.static('routes'));
 
 app.use("/", router);
+app.use("/comment", commentRouter);
 
 // start app and listen for incoming requests on port
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("The library is running!");
 });
-
 
 
 // catch 404 and forward to error handler
