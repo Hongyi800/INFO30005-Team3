@@ -20,26 +20,26 @@
     </div>
 
     <script type="text/javascript">
-        //step1
+
         const mymap = new AMap.Map('map',{
             mapStyle: 'amap://styles/dark',
             zoom: 4.5,
             center: [-100,40],
-            // center: [133,-27],
+
         })
-        //step2
+
         const mylayer = new Loca.PointLayer({
             map: mymap,
             eventSupport:true
         })
-        //step3
+
         mylayer.setData(mydata,{
             type: 'json',
             lnglat:function(obj){
                 return [obj.value.attributes.Long_, obj.value.attributes.Lat]
             }
         })
-        //step4
+
         mylayer.setOptions({
             unit: 'px',
             style: {
