@@ -14,8 +14,8 @@ require('./models/db.js');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', ejs.renderFile);
-app.set('view engine', 'html');
+app.engine('hbs', ejs.renderFile);
+app.set('view engine', 'hbs');
 
 app.use(express.static('routes'));
 
