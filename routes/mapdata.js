@@ -1,4 +1,4 @@
-const data = [{
+const mydata = [{
     "attributes": {
         "OBJECTID": 1907,
         "Province_State": "New York",
