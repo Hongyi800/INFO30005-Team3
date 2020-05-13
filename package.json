@@ -19,5 +19,15 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.9",
     "pug": "^2.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hongyi800/INFO30005-Team3.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Hongyi800/INFO30005-Team3/issues"
+  },
+  "homepage": "https://github.com/Hongyi800/INFO30005-Team3#readme"
 }
