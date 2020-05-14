@@ -88,7 +88,7 @@ const getCountryByID = async (req, res) => {
         console.log("Country found!!!", country);
 
 
-        res.render('countryupdateform', {
+        res.render('countryupdateform.pug', {
             title: 'Update Country',
             id: country.id,
             country_name: country.country_name,

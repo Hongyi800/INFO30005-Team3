@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 
 MONGO_URL = "mongodb+srv://hgu3:Ghy123456@cluster0-vyh1u.mongodb.net/test?retryWrites=true&w=majority";
 
+console.log(MONGO_URL);
 
 mongoose.connect(MONGO_URL || "mongodb://localhost/info30005", {
     useNewUrlParser: true,
