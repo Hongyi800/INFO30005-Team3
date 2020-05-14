@@ -7,7 +7,7 @@ const Country = mongoose.model("country");
 const getAllCountries = async (req, res) => {
     countries = []
     try {
-        const all_countries = await Country.find();
+        const all_countries = require("../models/countryconfirmedcases");
 
         res.render('countries.pug', {
             title: 'Country List',
