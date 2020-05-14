@@ -18,8 +18,8 @@ exports.renderInformationPage = (req, res) =>{
 exports.renderCommentPage = (req, res) =>{
     res.render("comment");
 };
-
-exports.getCountry = (req, res) =>{
-    res.send(`It is currently 0 confirmed cases in ${req.body.country}.`);
-};
+//
+// exports.getCountry = (req, res) =>{
+//     res.send(`It is currently 0 confirmed cases in ${req.body.country}.`);
+// };
 

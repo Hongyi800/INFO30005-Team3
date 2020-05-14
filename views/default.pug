@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/stylesheets/countryPage.css')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+
+        <div class="grid-container">
+        div.header #{title}
+        div.menu
+
+            // display home page
+            // route to open the Country Add Form
+            a(href='/') Home
+            br
+
+            // link to the route used to display current countries
+            // in the database
+            a(href='/country-management') Manage Countries
+            br
+
+
+
+
+
+        block content
+

@@ -1,0 +1,24 @@
+extends default
+
+block content
+
+    div.main
+        form(method='POST' action='/country-management/'+id)
+            div
+                label(for='id') ID:
+                input(type='text', placeholder='id' name='id' id='id' value=id)
+            div
+                label(for='country_name') Country Name:
+                input(type='text', placeholder='country name' name='country_name' id='country_name' value=country_name)
+
+            div
+                label(for='confirmed_case') Confirmed Case Num:
+                input(type='text', placeholder='confirmed case' name='confirmed_case' id='confirmed_case' value=confirmed_case)
+
+            button(type='submit') Update
+
+    </div>
+
+
+
+

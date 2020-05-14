@@ -1,13 +1,10 @@
 const mongoose = require("mongoose");
-var Schema = mongoose.Schema;
 
-var countrySchema = new Schema({
-  id: {type: String, required: true},
-  name: String,
-  confirmed_cases: String,
-  confirmed_death: String,
-  cured_num: String
+const countrySchema = new mongoose.Schema({
+  id: String,
+  country_name: String,
+  confirmed_case: Number
 });
 
-module.exports=mongoose.model('country', countrySchema);
-
+const Country = mongoose.model("country", countrySchema, "country");
+module.exports = Country;
