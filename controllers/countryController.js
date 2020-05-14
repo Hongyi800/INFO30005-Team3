@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 // import country model
 const Country = mongoose.model("country");
 
-
 // function to handle a request to get all countries
 const getAllCountries = async (req, res) => {
     countries = []
