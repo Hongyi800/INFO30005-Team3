@@ -6297,5 +6297,25 @@ const mydata = [{
         "People_Hospitalized": null,
         "UID": 84048061,
         "ISO3": "USA"
-    }
-}];
+    }},
+    {"attributes": {"id":"1","Combined_Key":"USA","Confirmed":"1,430,348","Lat": 37, "Long_": -95}},
+    {"attributes": {"id":"2","Combined_Key":"Spain","Confirmed":"271,095","Lat": 40, "Long_": -3.749}},
+    {"attributes": {"id":"3","Combined_Key":"Russia","Confirmed":"242,271","Lat": 61, "Long_": 105}},
+    {"attributes": {"id":"4","Combined_Key":"UK","Confirmed":"229,705","Lat": 56, "Long_": -4}},
+    {"attributes": {"id":"5","Combined_Key":"Italy","Confirmed":"222,104","Lat": 42, "Long_": 13}},
+    {"attributes": {"id":"6","Combined_Key":"Brazil","Confirmed":"190,137","Lat": -14, "Long_": -52}},
+    {"attributes": {"id":"7","Combined_Key":"France","Confirmed":"178,060","Lat": 46, "Long_": 3}},
+    {"attributes": {"id":"8","Combined_Key":"Germany","Confirmed":"174,098","Lat": 51, "Long_": 10.5}},
+    {"attributes": {"id":"9","Combined_Key":"Turkey","Confirmed":"143,114","Lat": 39, "Long_": 35}},
+    {"attributes": {"id":"10","Combined_Key":"Iran","Confirmed":"112,725","Lat": 32, "Long_": 53}},
+    {"attributes": {"id":"11","Combined_Key":"China","Confirmed":"82,929","Lat": 36, "Long_": 104}},
+    {"attributes": {"id":"12","Combined_Key":"India","Confirmed":"78,055","Lat": 21, "Long_": 79}},
+    {"attributes": {"id":"13","Combined_Key":"Peru","Confirmed":"76,306","Lat": -9, "Long_": -75}},
+    {"attributes": {"id":"14","Combined_Key":"Canada","Confirmed":"72,278","Lat": 56, "Long_": -106}},
+    {"attributes": {"id":"15","Combined_Key":"Belgium","Confirmed":"53,981","Lat": 50, "Long_": 4.5}},
+    {"attributes": {"id":"16","Combined_Key":"Saudi Arabia","Confirmed":"44,830","Lat": 24, "Long_": 45}},
+    {"attributes": {"id":"17","Combined_Key":"Netherlands","Confirmed":"43,211","Lat": 52, "Long_": 5.3}},
+    {"attributes": {"id":"18","Combined_Key":"Mexico","Confirmed":"40,186","Lat": 23.6, "Long_": -102.5}},
+    {"attributes": {"id":"19","Combined_Key":"Pakistan","Confirmed":"35,788","Lat": 30, "Long_": 69}},
+    {"attributes": {"id":"20","Combined_Key":"Chile","Confirmed":"34,381","Lat": -35.6, "Long_": -71.5}}
+];

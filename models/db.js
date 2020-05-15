@@ -12,7 +12,8 @@ mongoose.connect(MONGO_URL || "mongodb://localhost/info30005", {
     useCreateIndex: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    dbName: "INFO30005-database"
+
+    dbName: "INFO30005_Project"
 });
 
 const db = mongoose.connection;

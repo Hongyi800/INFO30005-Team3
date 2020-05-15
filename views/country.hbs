@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <!--    <link rel="stylesheet" type="text/css" href="public/stylesheets/worldmap.css" />-->
     <script src="mapdata.js"></script>
+    <script src="InfoWin.js"></script>
     <title>World Map</title>
     <li>
         <a href="country-management">World status</a>
@@ -14,10 +14,8 @@
 
 <body>
 
-<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=cc9b5116b54c2be17a209bf1b0fbacea"></script>
-<script type="text/javascript" src="https://webapi.amap.com/loca?v=1.3.2&key=cc9b5116b54c2be17a209bf1b0fbacea"></script>
-<!--    <script type="text/javascript" src="routes/mapdata.js"></script>-->
-<!--    <script type="text/javascript" src="routes/InfoWin.js"></script>-->
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=cc9b5116b54c2be17a209bf1b0fbacea"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/loca?v=1.3.2&key=cc9b5116b54c2be17a209bf1b0fbacea"></script>
 
 <div id="map" class="container">
     <p style="width:1500px; height: 750px">This is a map container</p>
@@ -26,9 +24,9 @@
 <script type="text/javascript">
 
     const mymap = new AMap.Map('map',{
-        mapStyle: 'amap://styles/dark',
         zoom: 4.5,
         center: [-100,40],
+        lang:'en'
 
     })
 
@@ -49,20 +47,20 @@
         style: {
             radius:(obj)=>{
                 const num = obj.value.attributes.Confirmed;
-                if(num >= 100000) return 30;
-                if(num>= 50000) return 25;
-                if(num>= 10000) return 20;
-                if(num>= 5000) return 15;
-                if(num>= 1000) return 10;
+                if(num >= 1000000) return 50;
+                if(num>= 100000) return 40;
+                if(num>= 70000) return 30;
+                if(num>= 50000) return 20;
+                if(num>= 30000) return 10;
                 else return 5;
             },
             color:(obj)=>{
                 const num = obj.value.attributes.Confirmed;
-                if(num >= 100000) return '#ff0000';
-                if(num>= 50000) return '#ff7700';
-                if(num>= 10000) return '#ff8800';
-                if(num>= 5000) return '#ff8800';
-                if(num>= 1000) return '#ffaa00';
+                if(num >= 1000000) return '#ff0000';
+                if(num>= 100000) return '#ff0000';
+                if(num>= 50000) return '#ff8800';
+                if(num>= 40000) return '#ff8800';
+                if(num>= 30000) return '#ffaa00';
                 else return '#ffaa00';
             }
         },
@@ -72,6 +70,23 @@
 
     mylayer.render();
 
+    //step5
+    mylayer.on('click',function(ev){
+        const rawData = ev.rawData;
+        console.log(rawData);
+        const originalEvent = ev.originalEvent;
+        openInfoWin(mymap,originalEvent,{
+            "Country Name":rawData.attributes.Combined_Key,
+            "Confirmed Case":rawData.attributes.Confirmed,
+            "Death Case":rawData.attributes.Deaths,
+            "Location":ev.lnglat
+        })
+    })
+
+    //step6
+    mymap.on('click',function(ev){
+        closeInfoWin();
+    })
 </script>
 </body>
 

@@ -1,22 +1,22 @@
 //var mongoose = require('mongoose');
 exports.renderHomePage = (req, res) =>{
-    res.render("index");
+    res.render("index.pug");
 };
 
 exports.renderLoginPage = (req, res) =>{
-    res.render("login");
+    res.render("login.pug");
 };
 
 exports.renderWorldMapPage = (req, res) =>{
-    res.render("country");
+    res.render("country.pug");
 };
 
 exports.renderInformationPage = (req, res) =>{
-    res.render("information");
+    res.render("information.pug");
 };
 
 exports.renderCommentPage = (req, res) =>{
-    res.render("comment");
+    res.render("comment.pug");
 };
 //
 // exports.getCountry = (req, res) =>{
