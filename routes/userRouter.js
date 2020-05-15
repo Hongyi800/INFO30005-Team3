@@ -28,3 +28,13 @@ userRouter.post("/registerfun", urlencodedParser, function(req, res) {
 // export the router
 module.exports = userRouter;
 
+// const express = require('express');
+// const router = express.Router();
+// const user = require('../models');
+//
+// router.post('/reg',(req, res) =>{
+//     res.send('test ok')
+// });
+//
+// module.export(router);
+
