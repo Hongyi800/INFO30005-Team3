@@ -5,7 +5,7 @@ const Country = mongoose.model("country");
 
 // function to handle a request to get all countries
 const getAllCountries = async (req, res) => {
-    countries = []
+
     try {
         const all_countries = await Country.find();
 
@@ -40,13 +40,14 @@ const updateCountry = async (req, res) => {
         const country = countries[0];
         console.log("Country found!!!", country);
 
+        country['id'] = new_country["id"];
         country["country_name"] = new_country["country_name"];
         country["confirmed_case"] = new_country["confirmed_case"];
 
 
         await country.save();
         res.render('initial.pug', {
-            title: 'Library App'
+            title: 'Country List'
         });
     } catch (err) {
         res.status(400);
@@ -57,13 +58,13 @@ const updateCountry = async (req, res) => {
 
 // function to add country
 const addCountry = async (req, res) => {
-    const new_country = req.body;
-    const country = new Country(new_country)
+    const new_countries = req.body;
+    const country = new Country(new_countries);
 
     try {
         await country.save();
         res.render('initial.pug', {
-            title: 'Library App'
+            title: 'Country List'
         });
     } catch (err) {
         res.status(400);
@@ -105,6 +106,6 @@ module.exports = {
     getAllCountries,
     getCountryByID,
     addCountry,
-    updateCountry
+    updateCountry,
 };
 
