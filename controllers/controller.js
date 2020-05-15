@@ -8,7 +8,7 @@ exports.renderLoginPage = (req, res) =>{
 };
 
 exports.renderWorldMapPage = (req, res) =>{
-    res.render("country.pug");
+    res.render("country");
 };
 
 exports.renderInformationPage = (req, res) =>{
