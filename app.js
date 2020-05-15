@@ -2,15 +2,12 @@ const express = require("express");
 const ejs = require('ejs');
 // const hbs = require('express-hbs');
 const bodyParser = require("body-parser");
-var cors = require('cors');
 
 const app = express();
 const path = require('path');
 
-app.use(cors());
 
 app.set('view engine', 'hbs');
-
 // test express where the static files are kept
 app.use(express.static(__dirname + '/public'));
 
@@ -26,11 +23,13 @@ app.engine('hbs', ejs.renderFile);
 app.use(express.static('routes'));
 
 const router = require("./routes/route");
+const userRouter = require('./routes/userRouter');
 const commentRouter = require("./routes/commentRouter");
 const countryRouter = require("./routes/countryRouter");
 
 
 app.use("/", router);
+app.use('/login',userRouter);
 app.use("/comment", commentRouter);
 app.use("/country-management", countryRouter);
 

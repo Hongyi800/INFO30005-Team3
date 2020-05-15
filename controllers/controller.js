@@ -7,6 +7,10 @@ exports.renderLoginPage = (req, res) =>{
     res.render("login.pug");
 };
 
+exports.renderRegPage = (req, res) =>{
+    res.render("register.pug");
+};
+
 exports.renderWorldMapPage = (req, res) =>{
     res.render("country");
 };

@@ -1,40 +1,26 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
+const express = require('express');
+const router = express.Router();
+const User = require('../models/user');
+const userController = require('../controllers/userController')
 
-// create router
-const userRouter = express.Router();
+router.post('/',(req,res)=>{
+    let username = req.body.username;
+    let password = req.body.password;
+    if(!username || !password){return res.send({err:-1,msg:'Missing Username or Password'})}
+    User.find({username:username,password:password})
+        .then((data)=> {
+            if(data.length>0){
+                res.send({err:0,msg:'Login in success!'})
+            }else{
+                res.send({err:2,msg:'Incorrect User/Password'})
+            }
+        })
+        .catch((err)=>{
+            res.send({err:0,msg:'Can not find User/Password'})
+        })
 
-// load/import the user controller
-const userController = require("../controllers/userController.js");
+})
 
-// load/import the route controller
-const routeController = require("../controllers/routerController.js");
 
-// handle the GET request on root of the user-management path
-// i.e. get all authors
-userRouter.get("/", (req, res) => userController.getAllUsers(req, res));
 
-// handle the login function
-userRouter.post("/loginfun", urlencodedParser, function(req, res) {
-    routeController.userLogin(req,res);
-});
-
-// handle the register function
-userRouter.post("/registerfun", urlencodedParser, function(req, res) {
-    routeController.userRegister(req,res);
-});
-
-// export the router
-module.exports = userRouter;
-
-// const express = require('express');
-// const router = express.Router();
-// const user = require('../models');
-//
-// router.post('/reg',(req, res) =>{
-//     res.send('test ok')
-// });
-//
-// module.export(router);
-
+module.exports = router;

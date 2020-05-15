@@ -2,30 +2,14 @@ doctype html
 head
     meta(charset='UTF-8')
     title Coronavirus defenders
-    link(rel='stylesheets', href='style.css', type='text/css')
-h1 User Login
-.body
-.grad
-.header
-    div
-        | Please
-        span Enter your username and password
-br
-form(name='login')
-    .login
-        label
-            input(type='text', placeholder='Username or Email', name='userid', value='')
-            br
-        label
-            input(type='password', placeholder='Password', name='pswrd', value='')
-            br
-        input(type='button', onclick='check(this.form)', name='', value='Sign in')
-script.
-    function check(form){
-        if(form.userid.value === "user" && form.pswrd.value === "12345"){
-            alert("Login successfully")
-            window.open('https://info30005-assi2.herokuapp.com/')
-        }else{
-            alert("Error username or password")
-        }
-    }
+    style
+        include loginPage.css
+    link(rel='stylesheet', href='loginPage.css')
+.login-box
+    form(action='/login', method='post')
+        h1 Login
+        .textbox
+            input.form-control(name='username', type='text', placeholder='Username', value='')
+        .textbox
+            input.form-control(name='password' type='password', placeholder='Password', value='')
+        input.btn(type='submit', name='', value='Sign in')

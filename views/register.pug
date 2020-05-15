@@ -1,0 +1,15 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Coronavirus defenders
+    style
+        include regPage.css
+    link(rel='stylesheet', href='regPage.css')
+.login-box
+    form(action='/register', method='post')
+        h1 Register Box
+        .textbox
+            input.form-control(name='username', type='text', placeholder='Username', value='')
+        .textbox
+            input.form-control(name='password' type='password', placeholder='Password', value='')
+        input.btn(type='submit', name='', value='Register Now!')
