@@ -3633,27 +3633,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2665,
-        "Province_State": "New Hampshire",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
-        "Lat": null,
-        "Long_": null,
-        "Confirmed": 28,
-        "Recovered": 0,
-        "Deaths": 47,
-        "Active": -19,
-        "Admin2": "Unassigned",
-        "FIPS": "90033",
-        "Combined_Key": "Unassigned, New Hampshire, US",
-        "Incident_Rate": null,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84090033,
-        "ISO3": "USA"
-    }
-}, {
-    "attributes": {
         "OBJECTID": 82,
         "Province_State": "Louisiana",
         "Country_Region": "US",

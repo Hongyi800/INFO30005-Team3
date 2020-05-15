@@ -48,11 +48,11 @@
             radius:(obj)=>{
                 const num = obj.value.attributes.Confirmed;
                 if(num >= 1000000) return 50;
-                if(num>= 100000) return 40;
+                if(num>= 100000) return 50;
                 if(num>= 70000) return 30;
-                if(num>= 50000) return 20;
+                if(num>= 50000) return 30;
                 if(num>= 30000) return 10;
-                else return 5;
+                else return 10;
             },
             color:(obj)=>{
                 const num = obj.value.attributes.Confirmed;
@@ -78,7 +78,6 @@
         openInfoWin(mymap,originalEvent,{
             "Country Name":rawData.attributes.Combined_Key,
             "Confirmed Case":rawData.attributes.Confirmed,
-            "Death Case":rawData.attributes.Deaths,
             "Location":ev.lnglat
         })
     })
