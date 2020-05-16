@@ -1,39 +1,30 @@
-// import the user model
-// i.e. provide the controller a link to the user model
 const User = require('../models/user');
 
-
-// function to handle request to add user
-const addUser = async (req, res) => {
-    // extract info. from body
-    res.render('reg.pug');
-    const new_user = req.body;
-    const user = new User(new_user);
-
-    if(user.username && user.password){
-        User.insertMany({
-            username:user.username,
-            password:user.password
+const userLogin = async(req, res) => {
+    let username = req.body.username;
+    let password = req.body.password;
+    if(!username || !password){return res.send({err:-1,msg:'Missing Username or Password'})}
+    User.find({username:username,password:password})
+        .then((data)=> {
+            if(data.length>0){
+                res.render("index.pug" , {
+                    title: 'Register Success!',
+                    h1: 'Click the links below to go back',
+                    name: username
+                })
+                //res.send({err:0,msg:'Login in success!'})
+            }else{
+                res.render("loginError.pug")
+                //res.send({err:2,msg:'Incorrect User/Password'})
+            }
         })
-            .then(()=>{
-                res.send({err:0,msg:'Regist Success!'})
-            })
-            .catch((err)=>{
-                res.send({err:0,msg:'Regist Failed!'})
-            })
-    }else{
-        return res.send({err:-1,msg:'Missing Username or Password'});
-    }
+        .catch((err)=>{
+            res.render("loginError.pug")
+            //res.send({err:0,msg:'Can not find User/Password'})
+        })
+};
 
-    // add user to array
-    try {
-        await user.save();
-    } catch (err) {
-        res.status(400);
-        return res.send('Database query failed');
-    }
-};
-// remember to export the functions
 module.exports = {
-    addUser
+    userLogin
 };
+

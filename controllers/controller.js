@@ -1,6 +1,9 @@
 //var mongoose = require('mongoose');
 exports.renderHomePage = (req, res) =>{
-    res.render("index.pug");
+    res.render("index.pug", {
+        title: "Coronavirus Defenders",
+        h1: "Coronavirus Defenders"
+    })
 };
 
 exports.renderLoginPage = (req, res) =>{
@@ -22,8 +25,3 @@ exports.renderInformationPage = (req, res) =>{
 exports.renderCommentPage = (req, res) =>{
     res.render("comment.pug");
 };
-//
-// exports.getCountry = (req, res) =>{
-//     res.send(`It is currently 0 confirmed cases in ${req.body.country}.`);
-// };
-
