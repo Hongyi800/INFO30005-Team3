@@ -10,7 +10,7 @@
 .h2{
     color: #faefea;
     opacity: 0.8;
-    font-size: 18px;
+    font-size: 30px;
     margin: 12px 0;
     text-align: right;
 }
@@ -78,7 +78,7 @@ ul li.active a{
 
 .button{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
 }

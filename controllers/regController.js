@@ -4,7 +4,7 @@ const userRegister = async(req, res) => {
     //get data
     let username = req.body.username;
     let password = req.body.password;
-    //let {username,password} = req.body;
+
     if(username && password){
         User.insertMany({
             username:username,
@@ -16,7 +16,6 @@ const userRegister = async(req, res) => {
                     h1: 'Welcome!',
                     name: username
                 })
-               //res.send({err:0,msg:'Register Success!'})
             })
             .catch((err)=>{
                 res.render("loginError.pug" , {
@@ -26,7 +25,10 @@ const userRegister = async(req, res) => {
                 })
             })
     }else{
-        return res.send({err:-1,msg:'Missing Username or Password'});
+        res.render("loginError.pug" , {
+            title: 'Register ERROR!',
+            h1: 'Missing Username or Password!',
+        })
     }
 };
 
