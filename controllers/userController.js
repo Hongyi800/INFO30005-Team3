@@ -8,13 +8,17 @@ const userLogin = async(req, res) => {
         .then((data)=> {
             if(data.length>0){
                 res.render("index.pug" , {
-                    title: 'Register Success!',
-                    h1: 'Click the links below to go back',
+                    title: 'Login Success!',
+                    h1: 'Welcome!',
                     name: username
                 })
                 //res.send({err:0,msg:'Login in success!'})
             }else{
-                res.render("loginError.pug")
+                res.render("loginError.pug" , {
+                    title: 'Login ERROR!',
+                    h1: 'ERROR, please try again!',
+                    name: username
+                })
                 //res.send({err:2,msg:'Incorrect User/Password'})
             }
         })

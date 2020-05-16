@@ -1,19 +1,29 @@
 doctype html
-head
-    meta(http-equiv='content-type', content='text/html;charset=UTF-8')
-    title Login ERROR : Incorrect User Name/Password
-    h1 Click the links below to go back
-#messageList
-    ul
-        li
-            a(href='login') Login Here
-        li
-            a(href='register') Register Here
-        li
-            a(href='comment') User Comment
-        li
-            a(href='country') World map
-        li
-            a(href='country-management') World status
-        li
-            a(href='information') News &amp; Information
+html
+    head
+        meta(http-equiv='content-type', content='charset=UTF-8')
+        link(rel='stylesheet', href='/stylesheets/homePage.css')
+        title #{title}
+
+    header
+        div.main
+            ul
+                li.active
+                    a(href='/') Home Page
+                li
+                    a(href='login') Login Here
+                li
+                    a(href='register') Register Here
+                li
+                    a(href='comment') User Comment
+                li
+                    a(href='information') News &amp; Information
+
+                div.h2 #{name}
+        div.title
+            div.h1 #{h1}
+
+
+        div.button
+            a.btn(href='country') World map
+            a.btn(href='country-management') World status

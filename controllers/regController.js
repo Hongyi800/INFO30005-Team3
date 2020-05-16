@@ -13,13 +13,17 @@ const userRegister = async(req, res) => {
             .then(()=>{
                 res.render("index.pug" , {
                     title: 'Register Success!',
-                    h1: 'Click the links below to go back',
+                    h1: 'Welcome!',
                     name: username
                 })
                //res.send({err:0,msg:'Register Success!'})
             })
             .catch((err)=>{
-                res.send({err:0,msg:'Register Failed!'})
+                res.render("loginError.pug" , {
+                    title: 'Register ERROR!',
+                    h1: 'ERROR, please try again!',
+                    name: username
+                })
             })
     }else{
         return res.send({err:-1,msg:'Missing Username or Password'});
