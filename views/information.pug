@@ -4,44 +4,53 @@ head
     title Coronavirus defenders
     style
         include informationPage.css
-
+#information
     h1 News and Information
     ul
-        a.selected(href='/') Go back to Homepage
-
-        h2 Basic knowledge for Coronavirus
-        p
-            | 1)  COVID-19 actually belongs to a family of coronaviruses (CoV), which include Middle East Respiratory Syndrome (MERS-CoV)
-            br
-            |                 and Severe Acute Respiratory Syndrome (SARS-CoV). According to the World Health Organization, CoVs can afflict you with
-            br
-            |                 something as mild as the common cold or something as deadly as SARS. The virus affecting people now is what&rsquo;s called a
-            br
-            |                 novel coronavirus (nCoV) because it&apos;s the first time this particular strain is being seen in humans.
-        p
-            | 2)  Coronaviruses can remain infectious on inanimate surfaces at room temperature for up to 9 days.
-            br
-            |                 At a temperature of 30&deg;C [86&deg;F] or more, the duration of persistence is shorter.
-
-        h2 Protective measures for Coronavirus
-        p
-            | 1)&#x9;Avoiding close contact with people suffering from acute respiratory infections.
-            br
-            |                 2)&#x9;Frequent hand washing, especially after direct contact with sick people or at their residence.
-            br
-            |                 3)&#x9;Avoid touching the face and covering the mouth and nose with handkerchief, sleeves or forearms during coughing and sneezing. Dispose of used handkerchief in the nearest waste bin.
-            br
-            |                 4)&#x9;If you have a fever, cough and difficulty breathing seek medical help immediately and tell the eventual story of traveling abroad.
-            br
-            |                 5)&#x9;Sick people should stay home to prevent the spread of the disease.
-            br
-            |                 6)&#x9;Use health services wisely.
-
-        h2
-            | For information on the diagnosis and treatment of new coronavirus, you could visit
-        p
-            | 1)&#x9;WHO Report (Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19))
-            br
-            | 2)&#x9;The New England Journal of Medicine
-        .footer
-            p Copyright &copy; 16/5/2020
+        li
+            a.selected(href='/') Home
+    h2 How long do coronaviruses persist?
+    article.news
+        a.news-img(href='#non')
+            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
+        .information-body
+            .text
+                p
+                    | Coronaviruses can remain infectious on inanimate surfaces at room temperature for up to 9 days. At a temperature of 30&deg;C [86&deg;F] or more, the duration of persistence is shorter.
+            p.attribution published on 20th Mar 2020
+    h2 What is coronavirus?
+    article.news
+        a.news-img(href='#non')
+            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
+        .information-body
+            .text
+                 p
+                    | COVID-19 actually belongs to a family of coronaviruses (CoV), which include Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). According to the World Health Organization, CoVs can afflict
+                    | you with something as mild as the common cold or something as deadly as SARS. The virus affecting people now is what&rsquo;s called a novel coronavirus (nCoV) because it&apos;s the first time this particular strain is being seen
+                    | in humans.
+            p.attribution published on 23th Apr 2020
+    h2 Protective measures for Coronavirus
+    article.news
+        a.news-img(href='#non')
+            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
+        .information-body
+            .text
+                p
+                    | 1) Avoiding close contact with people suffering from acute respiratory infections.
+                p
+                    | 2) Frequent hand washing, especially after direct contact with sick people or at their residence.
+                p
+                    | 3) Avoid touching the face and covering the mouth and nose with handkerchief, sleeves or forearms during coughing and sneezing. Dispose of used handkerchief in the nearest waste bin.
+                p
+                    | 4) If you have a fever, cough and difficulty breathing seek medical help immediately and tell the eventual story of traveling abroad.
+                p  5) Sick people should stay home to prevent the spread of the disease.
+                p  6) Use health services wisely.
+            p.attribution published on 17th Mar 2020
+    h2
+        | For information on the diagnosis and treatment of new coronavirus, you could visit
+    p
+        | 1) WHO Report (Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19))
+        br
+        | 2) The New England Journal of Medicine
+    .footer
+        p Copyright &copy; 16/5/2020
