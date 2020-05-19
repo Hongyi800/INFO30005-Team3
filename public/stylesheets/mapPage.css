@@ -1,0 +1,62 @@
+*{
+    font-family: Century Gothic, sans-serif;
+}
+
+.h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.details{
+    border: black 5px;
+    /*background-color: rgba(0,20,0,0.2);*/
+    width:500px;
+    height: 600px;
+    float: right;
+    text-indent: 20px;
+}
+
+.container{
+    width:1000px;
+    height: 600px;
+
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul.status{
+    float: left;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000
+
+}
+
+ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+ul li.active a{
+    background-color: #000;
+    color: #fff;
+}
+
+#footer{
+    clear: both;
+    text-align: center;
+}
+
+

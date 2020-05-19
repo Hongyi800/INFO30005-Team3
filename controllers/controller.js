@@ -15,7 +15,7 @@ exports.renderRegPage = (req, res) =>{
 };
 
 exports.renderWorldMapPage = (req, res) =>{
-    res.render("country");
+    res.render("country.pug");
 };
 
 exports.renderInformationPage = (req, res) =>{

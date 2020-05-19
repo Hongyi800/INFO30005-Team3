@@ -9,6 +9,17 @@
         <title>World Map</title>
 
     </head>
+    <header>
+        <div class="main">
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="login">Login Here</a></li>
+                <li><a href="register">Register Here</a></li>
+                <li><a href="comment">User Comment</a></li>
+                <li><a href="information">News &amp; Information</a></li>
+            </ul>
+        </div>
+    </header>
 
     <body>
 
@@ -17,24 +28,27 @@
 
         <h1>World Status and Epidemic Map</h1>
 
-        <div id="details">
+        <div class="details">
             <h2>World Status</h2>
-            <ul>
-                <li> <a class="selected" href='/'>Home</a></li>
-                <li>We provide epidemic data of all countries and regions in the world here. <br>
-                    If you want to visit, please click "World Status" below <br>
+            <p>We provide epidemic data of all countries and regions in the world here.
+                If you want to visit, please click "World Status" below <br>
+            </p>
+            <ul class="status">
+                <li>
                     <a href="country-management">World status</a>
                 </li>
             </ul>
+            <p> <br><br><br><br> </p>
             <h2>Epidemic Map</h2>
             <p>Here is the epidemic map for COVID-19 around the world.</p>
             <p>
-                We have provided data on the top 20 countries with the most severe outbreaks in the world <br>
-                and the cumulative number of confirmed cases in each state of the United States. <br>
-                For example, in the United States, the darker the dots on the map, the more serious the epidemic in the region.
+                We have provided data on the top 20 countries with the most severe outbreaks in the world
+                and the cumulative number of confirmed cases in each state of the United States.
+                For example, in the United States, the darker the dots on the map,
+                the more serious the epidemic in the region.
             </p>
             <p>
-                You can scroll the mouse to enlarge or reduce the map, <br>
+                You can scroll the mouse to enlarge or reduce the map,
                 or you can drag the mouse and click the point on the country/city you would like to view
             </p>
         </div>
@@ -69,8 +83,8 @@
                 style: {
                     radius:(obj)=>{
                         const num = obj.value.attributes.Confirmed;
-                        if(num >= 1000000) return 50;
-                        if(num>= 100000) return 50;
+                        if(num >= 1000000) return 40;
+                        if(num>= 100000) return 40;
                         if(num>= 70000) return 30;
                         if(num>= 50000) return 30;
                         if(num>= 30000) return 10;
