@@ -2,9 +2,21 @@ doctype html
 head
     meta(charset='UTF-8')
     title Coronavirus defenders
-    style
-        include loginPage.css
-    link(rel='stylesheet', href='loginPage.css')
+    link(rel='stylesheet', href='/stylesheets/loginPage.css')
+header
+    div.main
+        ul
+            li
+                a(href='/') Home Page
+            li.active
+                a(href='login') Login Here
+            li
+                a(href='register') Register Here
+            li
+                a(href='comment') User Comment
+            li
+                a(href='information') News &amp; Information
+
 .login-box
     form(action='/login', method='post')
         h1 Login

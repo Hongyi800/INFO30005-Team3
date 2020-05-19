@@ -4,11 +4,23 @@ head
     title Coronavirus defenders
     style
         include informationPage.css
+
+header
+    div.main
+        ul
+            li
+                a(href='/') Home Page
+            li
+                a(href='login') Login Here
+            li
+                a(href='register') Register Here
+            li
+                a(href='comment') User Comment
+            li.active
+                a(href='information') News &amp; Information
 #information
     h1 News and Information
-    ul
-        li
-            a.selected(href='/') Home
+
     h2 How long do coronaviruses persist?
     article.news
         a.news-img(href='#non')
