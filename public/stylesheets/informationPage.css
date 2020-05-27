@@ -1,100 +1,417 @@
+/* css Zen Garden submission 220 - 'Garments', by Dan Mall, http://www.danielmall.com/  */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+* { margin: 0; padding: 0; }
+html { font-size: 62.5%; } /* for rems */
 body {
-    margin: 20px auto;
-    font: 16px/1.4 Arial, sans-serif;
-    background: #f3eee9;
-}
-
-h1 {
-    margin: 20px;
-    background-color: #f3eee9;
-    color: black;
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-}
-
-h2, h3 {
-    margin: 0;
-    background-color: #f3eee9;
-    color: black;
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-}
-
-.news {
-    overflow: hidden;
-    padding: 0 0 1em;
-    border-bottom: 1px solid #ddd;
-    margin: 0 0 1em;
-    *zoom: 1;
-}
-
-.news-img {
-    float: left;
-    margin-right: 33px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.news-img img {
-    display: block;
-}
-
-.news .text {
-    padding: 10px;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    background: #fff;
-}
-
-.news .text p:last-child {
-    margin: 0;
-}
-
-.news .text:before {
-    top: 18px;
-    left: 78px;
-    width: 9px;
-    height: 9px;
-    border-width: 0 0 1px 1px;
-    border-style: solid;
-    border-color: #e5e5e5;
-    background: #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-}
-
-.footer {
-    text-align: center;
-    background-color: #F5CBA7  ;
-    color: black;
-}
-
-ul{
-    float: right;
-    list-style-type: none;
-    margin-top: 25px;
-}
-
-ul li{
-    display:inline-block;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #fff
-
-}
-
-ul li a:hover{
-    background-color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
     color: #000;
+    /*background: #e8ecf0 url(2.jpg)*/
+    /*no-repeat 100% 700px;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    background-image:url(2.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
 }
 
-ul li.active a{
-    background-color: #fff;
-    color: #000;
+
+/* block level */
+
+h1 { font: bold 4.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h4, h5, h6 { font: bold 1.2rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+
+.wf-active body,
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6 { font-family: "effra"; }
+
+p, ul, dl, ol, table { font-size: 16px; margin: 0 0 1.5em; }
+.wf-active p { font-weight: 300; }
+
+form { margin: 0 0 1.5em; }
+
+/* inline */
+
+label { font-size: 1.6rem; }
+input, select, textarea {  }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { }
+input.empty::-webkit-input-placeholder, textarea.empty::-webkit-input-placeholder { color: red; }
+input.empty:-moz-placeholder, textarea.empty:-moz-placeholder { color: red; }
+.error { color: red; }
+
+table { }
+td { padding: 0.25em 1em; border-top: 1px solid #aaa; }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+mark { background: none; font-style: normal; }
+
+video { width: 100%; height: auto; }
+
+a {
+    text-decoration: none; color: #a28351; position: relative;
+    transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+}
+
+a:after {
+    content: ""; display: block; background: #a28351; height: 2px; width: 100%; position: absolute; bottom: -0.2em; left: 0; opacity: 0;
+    transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+}
+
+a:hover, a:focus { color: #000; }
+a:hover:after, a:focus:after { opacity: 1; bottom: 0; }
+
+img { display: block; margin: 0 10px 10px 0; max-width: 100%; }
+
+a img { border: none; }
+
+i { font-style: normal; }
+b { font-weight: normal; }
+
+abbr, abbr[title], acronym { font-size: 75%; letter-spacing: 0.2em; text-transform: uppercase; border: none; }
+
+code { font: 1.4rem/1 Consolas, 'Courier New', Courier, monospace; color: #999; }
+
+sub, sup { line-height: 0; }
+
+::selection { background: #d5d9dc; color: #333; }
+::-moz-selection { background: #d5d9dc; color: #333; }
+
+
+/*-------------------------------------------
+    Global
+-------------------------------------------*/
+
+/* Phark Image Replacement - http://phark.typepad.com/phark/2003/08/accessible_imag.html */
+.phark { display: block; text-indent: -9999px; background-position: 0 0; background-repeat: no-repeat; background-color: transparent; }
+
+/* Trimming Outline in Firefox - http://snook.ca/archives/html_and_css/trimming_long_o  */
+/*\*/ .phark-link { overflow: hidden; } /**/
+
+/* Easy Clearing - http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.offscreen { position: absolute; left: -9999px; display: block; }
+.onscreen { left: 0; }
+
+.hide { display: none; }
+
+.no-bullets { list-style: none; }
+
+.bulleted { list-style: disc; }
+
+.uppercase { text-transform: uppercase; }
+
+.rwd-break { display: block; }
+
+.kellum { display: block; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+/*-------------------------------------------
+	Modules
+-------------------------------------------*/
+.page-wrapper { width: 90%; margin: 0 auto; }
+
+.main h3, .preamble h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #263358; }
+.wf-active .main h3, .wf-active .preamble h3 { font-weight: 900; }
+
+.main h3:after, .preamble h3:after, .select:after { visibility: visible; display: block; }
+
+.main p, .preamble p { font-size: 2rem; }
+.wf-active .main p, .wf-active .preamble p { line-height: 1.4; }
+
+.next a,
+.previous a,
+.viewall a,
+.zen-resources a,
+.summary p:nth-child(2) a
+{
+    transition-property: none;
+    -moz-transition-property: none;
+    -webkit-transition-property: none;
+    -o-transition-property: none;
+}
+
+.next a:after,
+.previous a:after,
+.viewall a:after,
+.zen-resources a:after,
+.summary p:nth-child(2) a:after
+{ opacity: 0; }
+
+
+
+/*-------------------------------------------
+	Banner
+-------------------------------------------*/
+[role="banner"] h1 { padding: 1em 0 0; text-transform: uppercase; letter-spacing: 0.1em; font-size: 3.5rem; font-weight: 900; color: #182e4f; visibility: hidden; }
+[role="banner"] h1:before { content: "News and Informations"; visibility: visible; display: block; }
+[role="banner"] h1:after { content: "Coronavirus Defenders"; visibility: visible; display: block; color: #aaa; letter-spacing: 0.5em; font-size: 1.4rem; font-weight: normal; margin: 0.5em 0 3em; color: rgba(24, 46, 79, 0.4);word-break:keep-all; }
+
+[role="banner"] h2 { visibility: hidden; display: none; text-transform: uppercase; font-weight: 400; color: rgba(41, 78, 134, 0.5); }
+[role="banner"] h2:after { content: "Impeccable Quality"; visibility: visible; display: block; }
+
+
+
+/*-------------------------------------------
+    Preamble
+-------------------------------------------*/
+.summary p { letter-spacing: 0.1em; font-size: 1.8rem; line-height: 1.6; }
+
+
+/*-------------------------------------------
+    Preamble
+-------------------------------------------*/
+.preamble h3:after { visibility: visible; content: "What is coronavirus?";  }
+
+
+/*-------------------------------------------
+	Explanation
+-------------------------------------------*/
+.explanation h3:after { content: "Protective measures for Coronavirus";  }
+
+
+/*-------------------------------------------
+	Participation
+-------------------------------------------*/
+.participation h3:after { content: "Can the coronavirus disease spread through food?r";  }
+
+
+/*-------------------------------------------
+	Benefits
+-------------------------------------------*/
+.benefits h3:after { content: "What are signs and symptoms of the coronavirus disease?!";  }
+
+
+/*-------------------------------------------
+	Requirements
+-------------------------------------------*/
+.requirements h3:after { content: "The need to balance competing risks brought by Coronaviru!"; text-indent: -0.5em; }
+
+
+
+/*-------------------------------------------
+	Design Selection
+-------------------------------------------*/
+.design-selection { margin: 3em 0 0; }
+.design-selection ul { list-style: none; width: 94%; margin: 0 auto; }
+.design-selection ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.design-selection li { float: left; width: 50%; font-size: 1.2rem; margin: 0 0 1em; color: #aaa; }
+.design-selection li:nth-child(odd) { width: 47%; padding-right: 3%; clear: left; }
+
+.design-name { display: block; font-size: 1.4rem; font-weight: bold; margin: 0 0 0.24em; text-transform: uppercase; letter-spacing: 0.1em; position: relative; }
+.design-name:after { background: none; opacity: 0; }
+.design-name:hover { font-style: italic; }
+
+.designer-name { color: #7989a3; }
+.designer-name:after, footer a:after { height: 1px; }
+
+
+
+.archives, .resources { position: absolute; left: -9999px;  }
+
+.design-archives ul { list-style: none; margin: 1em 0 0; width: 100%; text-align: center; }
+.design-archives li { display: inline-block; position: relative; }
+.design-archives a { display: block; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+
+.next { margin-right: 3em; }
+.next a:hover, .next a:focus { background-position: 10px -138px; }
+
+.previous { margin-right: 3em; }
+.previous a:hover, .previous a:focus { background-position: 10px -302px; }
+
+.viewall { margin-left: 1em; }
+.viewall a:hover, .viewall a:focus { background-position: -56px -137px; }
+
+footer { font-size: 1.3rem; }
+footer a { margin-left: 1em; }
+footer a:first-child { margin-left: 0; }
+
+.zen-resources ul { list-style: none; margin: 2em 0 4em; text-align: center; }
+.zen-resources ul:before { content: ""; height: 4px; width: 80px; background: #d5d9dc; display: block; text-align: center; margin: 0 auto 2em; }
+.zen-resources li { margin: 0 0 1em 3em; display: inline-block; }
+.zen-resources li:first-child { margin-left: 0; }
+
+.view-css a { background-position: -502px 12px; }
+.view-css a:hover, .view-css a:focus { background-position: -502px -78px; }
+
+.css-resources a { background-position: -150px -194px; }
+.css-resources a:hover, .css-resources a:focus { background-position: -150px -286px; }
+
+.zen-faq a { background-position: -265px -192px; }
+.zen-faq a:hover, .zen-faq a:focus { background-position: -265px -284px; }
+
+.zen-submit a { background-position: -502px -194px; }
+.zen-submit a:hover, .zen-submit a:focus { background-position: -502px -286px; }
+
+.zen-translations a { background-position: -380px -193px; }
+.zen-translations a:hover, .zen-translations a:focus { background-position: -380px -285px; }
+
+
+@media screen and (min-width: 700px) {
+
+    body { background-attachment: fixed; background-position: 90% 80%; }
+
+
+    [role="article"], [role="banner"], footer { padding: 0 30% 10em 10%; text-align: left; position: relative; }
+    [role="article"] h3, [role="banner"] h2 { position: absolute; top: -0.75em; left: 75%; width: 10em; text-align: left; font-size: 1.5rem; letter-spacing: 0; }
+    [role="article"] h3:after { position: absolute; top: 0; }
+
+    [role="banner"] { padding-top: 200px; padding-bottom: 3em; }
+
+    [role="banner"] h1 { font-size: 4.8rem; letter-spacing: 0; line-height: 0.8; }
+    [role="banner"] h1:after { position: absolute; top: 15.7em; right: 30%; }
+
+    [role="banner"] h2 { display: block; top: 8.1em; width: 3em; left: 75.5%; font-size: 1.9rem; line-height: 1; }
+
+    .summary p:nth-child(2) { background: yellow; position: relative; visibility: hidden; top: 2em; font-size: 1.4rem; }
+
+
+    .summary p:nth-child(2) a[href*="css"] { background-position: -472px -94px; right: 0; }
+    .summary p:nth-child(2) a[href*="css"]:hover, .summary p:nth-child(2) a[href*="css"]:focus { background-position: -512px -4px; }
+
+    .preamble { padding-top: 10em; }
+    .preamble h3 { top: 5.9em; }
+
+    .design-selection li { width: 23%; margin-bottom: 3em; padding-right: 2%; }
+    .design-selection li:nth-child(odd) { width: 23%; clear: none; padding-right: 2%; }
+
+    .next { margin-right: 2em; margin-left: -0.4em; }
+    .viewall { margin-left: 0; }
+
+    footer { padding-bottom: 3em; margin-top: -5em; }
+}
+
+
+@media screen and (min-width: 1130px) {
+
+    [role="article"], [role="banner"] { padding-left: 25%; }
+
+    .design-selection { position: absolute; left: 5%; top: 30em; }
+    .design-selection ul { margin: 0; width: 100%; }
+    .design-selection li { float: none; width: 100% !important; padding: 0 !important; margin-bottom: 2em;}
+    .select:after { text-align: left; background-position: 0 bottom; padding: 0 0 2em; margin: 0 0 2em; }
+
+    .design-archives { position: absolute; left: 5%; top: 95em; }
+
+}
+
+
+@media screen and (min-width: 1130px) and (min-height: 1037px)  {
+    .design-selection, .design-archives { position: fixed; }
+
+}
+
+
+
+/*-------------------------------------------
+	Animations
+-------------------------------------------*/
+@-webkit-keyframes FADEY {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.intro {
+    -webkit-animation-name: FADEY;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+[role="article"] {
+    -webkit-opacity: 0;
+    -webkit-animation-name: FADEY;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+.design-selection, .design-archives {
+    -webkit-opacity: 0;
+    -webkit-animation-name: FADEY;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+}
+
+
+/*-------------------------------------------
+	IE, i.e. Internet Explorer (heh)
+-------------------------------------------*/
+
+@media screen and (min-width:0\0) { /* IE9 and IE10 rule sets go here */
+
+    .main h3, .preamble h3, .select { visibility: visible; }
+    [role="banner"] h1 { visibility: visible; width: auto; display: block; }
+
+    .main h3:after, .preamble h3:after, .select:after { display: none; }
+    [role="banner"] h1:before { display: none; }
+
+}
+
+
+/* IE8 and below */
+.main h3, .preamble h3, .select { visibility: visible\9; font-size: 20px\9; }
+.main h3:after, .preamble h3:after, .select:after { display: none\9; }
+
+.page-wrapper { width: 800px\9; }
+.preamble { padding-top: 50px\9; margin-top: 50px\9; }
+
+h1 { font-size: 48px\9; text-transform: uppercase\9; margin: 0\9; padding-top: 30px\9;}
+h2 { font-size: 20px\9; }
+
+
+
+
+/* IE7 & below */
+.next a,
+.previous a,
+.viewall a,
+.zen-resources a {
+    *background: none;
+    *width: auto;
+    *height: auto;
+    *display: block;
+    *text-indent: 0;
+    *white-space: normal;
+    *overflow: visible;
+}
+
+.design-archives {
+    *position: static;
+    *margin-top: 30px;
+}
+
+.design-archives li {
+    *display: inline;
+    *margin-right: 20px;
+}
+
+.next {
+    *margin-right: 2em;
+    *margin-left: -0.4em;
+}
+
+.viewall {
+    *margin-left: 0;
 }

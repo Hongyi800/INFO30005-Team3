@@ -1,69 +1,96 @@
 doctype html
 head
-    meta(charset='UTF-8')
-    title Coronavirus defenders
-    style
-        include ../public/stylesheets/informationPage.css
-
-header
-    div
-        ul
-            li
-                a(href='/') Home Page
-            li
-                a(href='login') Login Here
-            li
-                a(href='register') Register Here
-            li
-                a(href='comment') User Comment
-            li.active
-                a(href='information') News &amp; Information
-                
-#information
-    h1 News and Information
-
-    h2 How long do coronaviruses persist?
-    article.news
-        a.news-img(href='#non')
-            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
-        .information-body
-            .text
-                p
-                    | Coronaviruses can remain infectious on inanimate surfaces at room temperature for up to 9 days. At a temperature of 30&deg;C [86&deg;F] or more, the duration of persistence is shorter.
-            p.attribution published on 20th Mar 2020
-    h2 What is coronavirus?
-    article.news
-        a.news-img(href='#non')
-            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
-        .information-body
-            .text
-                 p
-                    | COVID-19 actually belongs to a family of coronaviruses (CoV), which include Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). According to the World Health Organization, CoVs can afflict
-                    | you with something as mild as the common cold or something as deadly as SARS. The virus affecting people now is what&rsquo;s called a novel coronavirus (nCoV) because it&apos;s the first time this particular strain is being seen
-                    | in humans.
-            p.attribution published on 23th Apr 2020
-    h2 Protective measures for Coronavirus
-    article.news
-        a.news-img(href='#non')
-            img(src='http://img17.3lian.com/d/file/201702/24/d32304868431263bad442a9ddac5bfbf.jpg', alt='', width='50', height='50')
-        .information-body
-            .text
-                p
-                    | 1) Avoiding close contact with people suffering from acute respiratory infections.
-                p
-                    | 2) Frequent hand washing, especially after direct contact with sick people or at their residence.
-                p
-                    | 3) Avoid touching the face and covering the mouth and nose with handkerchief, sleeves or forearms during coughing and sneezing. Dispose of used handkerchief in the nearest waste bin.
-                p
-                    | 4) If you have a fever, cough and difficulty breathing seek medical help immediately and tell the eventual story of traveling abroad.
-                p  5) Sick people should stay home to prevent the spread of the disease.
-                p  6) Use health services wisely.
-            p.attribution published on 17th Mar 2020
-    h2
-        | For information on the diagnosis and treatment of new coronavirus, you could visit
-    p
-        | 1) WHO Report (Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19))
-        br
-        | 2) The New England Journal of Medicine
-    .footer
-        p Copyright &copy; 16/5/2020
+    meta(charset='utf-8')
+    title Coronavirus Defenders
+    link(rel='stylesheet', media='screen', href='/stylesheets/informationPage.css')
+    link(rel='alternate', type='application/rss+xml', title='RSS', href='http://www.csszengarden.com/zengarden.xml')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='author', content='Dave Shea')
+    // <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+    meta(name='robots', content='all')
+    // <script>try{Typekit.load();}catch(e){}</script>
+.page-wrapper
+    section#zen-intro.intro
+        header(role='banner')
+            h1 Coronavirus Defenders
+        #zen-summary.summary(role='article')
+            p
+                | This is a worldwide problem which is impacting people around the globe because the novel coronavirus (COVID-19) is affecting 200 countries/territories and one international conveyance. According to the world health organization, up to 27th of March, there have been 532,692 confirmed cases all over the world.
+        #zen-preamble.preamble(role='article')
+            h3 What is coronavirus?
+            p
+                | COVID-19 actually belongs to a family of coronaviruses (CoV), which include Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV).
+            p
+                | According to the World Health Organization, CoVs can afflict you with something as mild as the common cold or something as deadly as SARS. The virus affecting people now is what&rsquo;s called a novel coronavirus (nCoV) because it&apos;s the first time this particular strain is being seen in humans.
+    #zen-supporting.main.supporting(role='main')
+        #zen-explanation.explanation(role='article')
+            h3 Protective measures for Coronavirus
+            p
+                | 1)   Avoiding close contact with people suffering from acute respiratory infections.
+            p
+                | 2)&#x9;Frequent hand washing, especially after direct contact with sick people or at their residence.
+            p
+                | 3)&#x9;Avoid touching the face and covering the mouth and nose with handkerchief, sleeves or forearms during coughing and sneezing. Dispose of used handkerchief in the nearest waste bin.
+            p
+                | 4)&#x9;If you have a fever, cough and difficulty breathing seek medical help immediately and tell the eventual story of traveling abroad.
+            p 5)&#x9;Sick people should stay home to prevent the spread of the disease.
+        #zen-participation.participation(role='article')
+            h3 Can the coronavirus disease spread through food?
+            p
+                | Current evidence on other coronavirus strains shows that while coronaviruses appear to be stable at low and freezing temperatures for a certain period, food hygiene and good food safety practices can prevent their transmission through food.
+            p How long do coronaviruses persist?
+            p
+                | Coronaviruses can remain infectious on inanimate surfaces at room temperature for up to 9 days. At a temperature of 30&deg;C [86&deg;F] or more, the duration of persistence is shorter.
+            p
+        #zen-benefits.benefits(role='article')
+            h3 What are signs and symptoms of the coronavirus disease?
+            p
+                | Signs and symptoms include respiratory symptoms and include fever, cough and shortness of breath. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome and sometimes death.
+        #zen-requirements.requirements(role='article')
+            h3 The need to balance competing risks brought by Coronaviru
+            p
+                | Some have argued restrictions need to continue until safety can be guaranteed. But those arguments generally ignore the fact that continuing to do so carries risk in itself.
+            p
+                | UK chief medical adviser Prof Chris Witty often describes these as the &quot;indirect costs&quot; of the pandemic. They include everything from poor access to healthcare for other conditions through to rises in mental illness, financial hardship and damage to education.
+            p
+                | So as restrictions ease, society and individuals themselves are going to have to make decisions based on balancing competing sets of risks.
+            p
+                | This is a learning exercise as well as a demonstration. You can check fully information on
+                a(href='https://www.bbc.com/news/health-52758024') BBC News
+                | )
+            p(role='contentinfo')
+                | Check
+                a(href='https://info30005-assi2.herokuapp.com/country')  World Map
+                |  here. If you have any suggestions,
+                a(href='https://info30005-assi2.herokuapp.com/comment') Contact us
+                |  here.
+    aside.sidebar(role='complementary')
+        .wrapper
+            #design-selection.design-selection
+                h3.select Select a Design:
+                nav(role='navigation')
+                    ul
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/') Home Page
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/login') Login
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/comment') User Comment
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/information') News and Information
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/country') World Map
+                        li
+                            a.design-name(href='https://info30005-assi2.herokuapp.com/country-management') World Status
+            #design-archives.design-archives
+                h3.archives Archives:
+                nav(role='navigation')
+                    ul
+                        li.next
+                            a(href='/220/page1')
+                                | Next Designs
+                                span.indicator &rsaquo;
+                        li.viewall
+                            a(href='http://www.mezzoblue.com/zengarden/alldesigns/', title='View every submission to the Zen Garden.')
+                                | View All Designs
+            #zen-resources.zen-resources
