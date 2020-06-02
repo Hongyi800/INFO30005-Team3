@@ -9,20 +9,16 @@ html
         <div class="grid-container">
         div.header #{title}
         div.menu
+            ul
+                li
+                    a(href='/') Home Page
+                li
+                    a(href='/country') World Map
+                li
+                    a(href='comment') User Comment
+                li
+                    a(href='information') News &amp; Information
 
-            // display home page
-            // route to open the Country Add Form
-            a(href='/') Home
-            br
-
-            // link to the route used to display map
-            // in the database
-            a(href='/country') World Map
-            br
-
-
-            a(href='/comment') User comment
-            br
 
 
         block content
