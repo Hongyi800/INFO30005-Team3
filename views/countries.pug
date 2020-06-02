@@ -4,20 +4,6 @@ block content
 
     div.main
         div
-            h3 Country Add Form
-            form(method='POST' action='/country-management')
-                div
-                    label(for='id') ID:
-                    input(type='text', placeholder='id' name='id' id='id' value="")
-                div
-                    label(for='country_name') Country Name:
-                    input(type='text', placeholder='enter name' name='country_name' id='country_name' value="")
-                div
-                    label(for='confirmed_case') Confirmed Case Num:
-                    input(type='text', placeholder='enter number' name='confirmed_case' id='confirmed_case' value="")
-                button(type='submit') Add
-
-            h4 Country Update Form
             center
                 table
                     tr
@@ -27,8 +13,7 @@ block content
 
                         each country in countries
                             tr
-                                td
-                                    a(href='/country-management/' + country.id) #{country.id}
+                                td #{country.id}
                                 td #{country.country_name}
                                 td #{country.confirmed_case}
 

@@ -1,21 +1,15 @@
-doctype html
-head
-    title Comment System
-    link(href='./public/stylesheets/commentPage.css', type='text/css', rel='stylesheet')
-.form
-    h5 Add Comment
-    |     Name:
-    label(for='name')
-    input#name(type='text')
-    br
-    br
-    |     Date:
-    label(for='date')
-    input#date(type='text')
-    br
-    br
-    |     Body:
-    label(for='bodyText')
-    textarea#bodyText(rows='5', cols='30')
-    input#addComment(type='button', value='Add Comment')
-#container
+extends default
+
+block content
+
+    div.main
+        table
+            tr
+                th username
+                th comment
+
+            each comment in comments
+                tr
+                    td
+                        a(href='/addComment/' + comment.username) #{comment.username}
+                    td #{comment.content}

@@ -1,0 +1,17 @@
+extends default
+
+block content
+    div.main
+        div
+            h3 Add comment
+            form(method='POST' action='/addComment')
+                div
+                    label(for='username') username:
+                    input(type='text', placeholder='username' name='username' id='username' value="")
+                div
+                    label(for='content') comment:
+                    input(type='text', placeholder='enter comment' name='comment' id='content' value="")
+
+                button(type='submit') Add
+
+    </div>
