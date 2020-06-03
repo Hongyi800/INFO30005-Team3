@@ -2,19 +2,31 @@ extends default
 
 block content
 
-    div.main
-        div
-            h3 Comment List
-            form(method='POST' action='/comment')
-                div
-                    label(for='username') username;
-                    input(type='text', placeholder='username' name='username' id='username' value="")
-                div
-                    label(for='content') Content:
-                    input(type='text', placeholder='content' name='content' id='content' value="")
-                button(type='submit') Add
-        div
-            h3 Comment List
-                    each comment in comments
-                        li
-                            #{comment.username} say: #{comment.content}
+    div.box
+        h3 Comment Box
+        form(method='POST' action='/comment')
+            div
+                label(for='username') User :&nbsp&nbsp
+                input(type='text', placeholder='username' name='username' id='username' value="")
+                br
+            div
+                label(for='date') Date :&nbsp
+                input(type='date',id='date' value="")
+                br
+                br
+            div
+                label(for='content') Body:&nbsp
+                textarea(rows="5" cols="30" id='content')
+                br
+                br
+            button(type='submit') Add Comment
+    div.list
+        h3 Comment List
+            each comment in comments
+                div.left
+                div.right
+                    p
+                        |#{comment.username} :
+                        br
+                        br
+                        |&nbsp&nbsp&nbsp&nbsp#{comment.content}

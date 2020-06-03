@@ -1,66 +1,69 @@
-.header { grid-area: header; font-size: 60px; font-weight: bold }
+.box { grid-area: box;}
+.list { grid-area: list; }
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 
 *{
     font-family: Century Gothic, sans-serif;
 }
-
-.content{
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width:400px;
-}
-
-.content th{
-    background-color: #009879;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-}
-
-.content th,
-.content td{
-    padding: 12px 15px;
-}
-
-.content tr.tbody{
-    text-align: center;
-    border-bottom: 1px solid #aaaaaa;
-    background-color: rgba(255,255,255,0.7);
-}
-.content tr.tbody:nth-of-type(even){
-    background-color: rgba(255,255,255,0.4);
-}
-.content tr.tbody:last-of-type{
-    border-bottom: 2px solid #009879;
+body{
+    background-image: url(2.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
 }
 
 
 .grid-container {
     display: grid;
     grid-template-areas:
-            'menu menu menu menu menu menu'
-            'header main main rignt right right';
+            'menu menu menu'
+            'box list list'
+            'box list list';
     grid-gap: 10px;
     background-color: #ffffff;
-
     text-align: center;
-}
-
-.grid-container > div {
     background-image: url(2.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
+}
+
+.grid-container > div {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
 }
+.grid-container > div.menu {
+    font-size: 18px;
+}
+
+.grid-container > div.box {
+     padding: 10px;
+     margin-bottom: 10px;
+     text-align: center;
+}
+.grid-container > div.box input[type="text"], .box textarea, .box input[type="date"]{
+    padding: 2px;
+    border: 1px solid black;
+    width: 300px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0.1rem;
+}
+
+.right{
+    background-color: rgba(255,255,255,0.5);
+    width: 85%;
+    border: 1px solid black;
+    float: left;
+    margin-left: 1%;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+
 
 ul{
-    font-size: 20px;
     float: right;
     list-style-type: none;
     margin-top: 25px;
@@ -69,12 +72,9 @@ ul{
 
 ul li{
     display:inline-block;
-    /*display: block;*/
-    /*margin-bottom: 50px;*/
 }
 
 ul li a{
-
     text-decoration: none;
     color: #000;
     padding: 10px 20px;
@@ -87,5 +87,21 @@ ul li a:hover{
     color: #fff;
 }
 
+ul li.active a{
+    background-color: #000;
+    color: #fff;
+}
+
+button{
+    border: none;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+
+}
 
 
