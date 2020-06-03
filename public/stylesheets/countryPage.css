@@ -41,8 +41,6 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-            /*'header header header header header header'*/
-            /*'menu main main rignt right right';*/
             'menu menu menu menu menu menu'
             'header main main rignt right right';
     grid-gap: 10px;

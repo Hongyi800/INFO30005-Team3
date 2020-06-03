@@ -1,4 +1,4 @@
-.header { grid-area: header; font-size: 65px; font-weight: bold }
+.header { grid-area: header; font-size: 60px; font-weight: bold }
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 
@@ -41,8 +41,6 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-        /*'header header header header header header'*/
-        /*'menu main main rignt right right';*/
             'menu menu menu menu menu menu'
             'header main main rignt right right';
     grid-gap: 10px;

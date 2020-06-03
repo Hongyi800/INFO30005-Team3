@@ -15,14 +15,6 @@ block content
                 button(type='submit') Add
         div
             h3 Comment List
-            center
-                table
-                    tr
-                        th username
-                        th Content
-
-                each comment in comments
-                    tr
-                        td
-                            a(href='/comment/' + comment.username) #{comment.username}
-                        td #{comment.content}
+                    each comment in comments
+                        li
+                            #{comment.username} say: #{comment.content}
