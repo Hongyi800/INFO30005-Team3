@@ -1,21 +1,37 @@
-extends default
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/stylesheets/countryPage.css')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
 
-block content
+        <div class="grid-container">
+        div.header #{title}
+        div.menu
+            ul
+                li
+                    a(href='/') Home Page
+                li
+                    a(href='country') World Map
+                li
+                    a(href='comment') User Comment
+                li
+                    a(href='information') News & Information
 
-    div.main
-        div
-            center
-                table.content
-                    tr
-                        th ID
-                        th Country Name
-                        th Confirmed Case Num
+        div.main
+            div
+                center
+                    table.content
+                        tr
+                            th ID
+                            th Country Name
+                            th Confirmed Case Num
 
 
-                        each country in countries
-                            tr.tbody
-                                td #{country.id}
-                                td #{country.country_name}
-                                td #{country.confirmed_case}
-
+                            each country in countries
+                                tr.tbody
+                                    td #{country.id}
+                                    td #{country.country_name}
+                                    td #{country.confirmed_case}
 

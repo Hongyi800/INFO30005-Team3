@@ -3,13 +3,26 @@ extends default
 block content
 
     div.main
-        table
-            tr
-                th username
-                th comment
+        div
+            h3 Comment List
+            form(method='POST' action='/comment')
+                div
+                    label(for='username') username;
+                    input(type='text', placeholder='username' name='username' id='username' value="")
+                div
+                    label(for='content') Content:
+                    input(type='text', placeholder='content' name='content' id='content' value="")
+                button(type='submit') Add
+        div
+            h3 Comment List
+            center
+                table
+                    tr
+                        th username
+                        th Content
 
-            each comment in comments
-                tr
-                    td
-                        a(href='/addComment/' + comment.username) #{comment.username}
-                    td #{comment.content}
+                each comment in comments
+                    tr
+                        td
+                            a(href='/comment/' + comment.username) #{comment.username}
+                        td #{comment.content}

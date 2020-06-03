@@ -5,10 +5,9 @@ const Comment = mongoose.model("comment");
 
 // function to handle a request to get all comments
 const getAllComments = async (req, res) => {
-
+    comments = []
     try {
         const all_comments = await Comment.find();
-
         res.render('comment.pug', {
             title: 'Comment List',
             comments: all_comments
@@ -22,8 +21,8 @@ const getAllComments = async (req, res) => {
 
 // function to add comment
 const addComment = async (req, res) => {
-    const new_comments = req.body;
-    const comment = new Comment(new_comments);
+    const new_comment = req.body;
+    const comment = new Comment(new_comment);
 
     try {
 
@@ -39,7 +38,7 @@ const addComment = async (req, res) => {
 
 // function to modify comment
 const updateComment = async (req, res) => {
-    const commentId = req.params.username();
+    const commentId = req.params.username;
     const new_comment = req.body;
 
     try {
@@ -55,7 +54,6 @@ const updateComment = async (req, res) => {
 
         comment["content"] = new_comment["content"];
 
-
         await comment.save();
         res.render('initial.pug', {
             title: 'Comment List'
@@ -68,7 +66,7 @@ const updateComment = async (req, res) => {
 };
 
 const getCommentByName = async (req, res) => {
-    const commentName = req.params.username();
+    const commentName = req.params.username;
 
     try {
         const comments = await Comment.find({username: commentName});

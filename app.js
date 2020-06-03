@@ -22,12 +22,12 @@ app.engine('hbs', ejs.renderFile);
 
 app.use(express.static('routes'));
 
+
 const router = require("./routes/route");
 const userRouter = require('./routes/userRouter');
 const regRouter = require('./routes/regRouter');
 const commentRouter = require("./routes/commentRouter");
 const countryRouter = require("./routes/countryRouter");
-
 
 app.use("/", router);
 app.use('/login',userRouter);
@@ -73,4 +73,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-

@@ -21,7 +21,3 @@ exports.renderWorldMapPage = (req, res) =>{
 exports.renderInformationPage = (req, res) =>{
     res.render("information.pug");
 };
-
-exports.renderCommentPage = (req, res) =>{
-    res.render("comment.pug");
-};

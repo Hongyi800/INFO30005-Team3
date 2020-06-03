@@ -9,8 +9,6 @@ router.get("/login", controller.renderLoginPage);
 
 router.get("/register", controller.renderRegPage);
 
-router.get("/comment", controller.renderCommentPage);
-
 router.get("/country", controller.renderWorldMapPage);
 
 router.get("/information", controller.renderInformationPage);
