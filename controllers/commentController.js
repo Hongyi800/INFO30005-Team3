@@ -25,13 +25,24 @@ const addComment = async (req, res) => {
     const comment = new Comment(new_comment);
 
     try {
-
-        await comment.save();
-        const all_comments = await Comment.find();
-        res.render('comment.pug', {
-            title: 'Success',
-            comments: all_comments
-        });
+        if (comment.content.length < 1) {
+            res.render('index.pug', {
+                title: 'Comment Failed',
+                h1: "Cannot add empty comments"
+            });
+        } else if (comment.username.length < 3) {
+            res.render('index.pug', {
+                title: 'Comment Failed',
+                h1: "Nickname must have at least 3 letters"
+            });
+        } else {
+            await comment.save();
+            const all_comments = await Comment.find();
+            res.render('comment.pug', {
+                title: 'Success',
+                comments: all_comments
+            });
+        }
     } catch (err) {
         res.status(400);
         return  res.send('Database query failed');
