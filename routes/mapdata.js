@@ -1,72 +1,25 @@
-const mydata = [{
+const mydata = [
+    {"attributes": {"Lat": 40.7672726, "Long_": -73.97152637, "Confirmed": 184417, "Deaths": 19789, "Combined_Key": "New York City, New York, US"}},
+    {
+        "attributes": {
+            "Lat": 41.84144849,
+            "Long_": -87.81658794,
+            "Confirmed": 52655,
+            "Deaths": 2317,
+            "Combined_Key": "Cook, Illinois, US"
+        }
+    },
+    {
+        "attributes": {
+            "Lat": 42.28098405,
+            "Long_": -83.281255,
+            "Confirmed": 18075,
+            "Deaths": 2097,
+            "Combined_Key": "Wayne, Michigan, US"
+        }
+    },
+    {
     "attributes": {
-        "OBJECTID": 1907,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
-        "Lat": 40.7672726,
-        "Long_": -73.97152637,
-        "Confirmed": 184417,
-        "Recovered": 0,
-        "Deaths": 19789,
-        "Active": 164628,
-        "Admin2": "New York City",
-        "FIPS": "36061",
-        "Combined_Key": "New York City, New York, US",
-        "Incident_Rate": 2212.07926238515,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036061,
-        "ISO3": "USA"
-    }
-}, {
-    "attributes": {
-        "OBJECTID": 589,
-        "Province_State": "Illinois",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
-        "Lat": 41.84144849,
-        "Long_": -87.81658794,
-        "Confirmed": 52655,
-        "Recovered": 0,
-        "Deaths": 2317,
-        "Active": 50338,
-        "Admin2": "Cook",
-        "FIPS": "17031",
-        "Combined_Key": "Cook, Illinois, US",
-        "Incident_Rate": 1022.3809291735,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84017031,
-        "ISO3": "USA"
-    }
-}, {
-    "attributes": {
-        "OBJECTID": 2825,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
-        "Lat": 42.28098405,
-        "Long_": -83.281255,
-        "Confirmed": 18075,
-        "Recovered": 0,
-        "Deaths": 2097,
-        "Active": 15978,
-        "Admin2": "Wayne",
-        "FIPS": "26163",
-        "Combined_Key": "Wayne, Michigan, US",
-        "Incident_Rate": 1033.24505257117,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84026163,
-        "ISO3": "USA"
-    }
-}, {
-    "attributes": {
-        "OBJECTID": 1887,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.74066522,
         "Long_": -73.58941873,
         "Confirmed": 38217,
@@ -84,10 +37,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2514,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.88320119,
         "Long_": -72.8012172,
         "Confirmed": 36702,
@@ -105,10 +54,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1575,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 34.30828379,
         "Long_": -118.2282411,
         "Confirmed": 31703,
@@ -126,10 +71,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 819,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.78681335,
         "Long_": -74.24657979,
         "Confirmed": 15646,
@@ -147,10 +88,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 176,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.96010917,
         "Long_": -74.07164325,
         "Confirmed": 16929,
@@ -168,10 +105,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2851,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.16278376,
         "Long_": -73.75741653,
         "Confirmed": 31294,
@@ -189,10 +122,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1765,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.48607732,
         "Long_": -71.39049229,
         "Confirmed": 17589,
@@ -210,10 +139,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 830,
-        "Province_State": "Connecticut",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.26809896,
         "Long_": -73.3881171,
         "Confirmed": 13236,
@@ -231,10 +156,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1210,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.73766234,
         "Long_": -74.07515667,
         "Confirmed": 17513,
@@ -252,10 +173,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1128,
-        "Province_State": "Connecticut",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.80283011,
         "Long_": -72.73103891,
         "Confirmed": 7263,
@@ -273,10 +190,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2085,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.00338507,
         "Long_": -75.1379271,
         "Confirmed": 18211,
@@ -294,10 +207,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2697,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.65835409,
         "Long_": -74.30680092,
         "Confirmed": 14057,
@@ -315,10 +224,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1947,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.66090111,
         "Long_": -83.38595416,
         "Confirmed": 7736,
@@ -336,10 +241,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1766,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.43629879,
         "Long_": -74.41426991,
         "Confirmed": 13937,
@@ -357,10 +258,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2046,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.03238628,
         "Long_": -74.29954144,
         "Confirmed": 14543,
@@ -378,10 +275,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 2513,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.3279514,
         "Long_": -71.07850442,
         "Confirmed": 15279,
@@ -399,10 +292,6 @@ const mydata = [{
     }
 }, {
     "attributes": {
-        "OBJECTID": 1903,
-        "Province_State": "Connecticut",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.4080325,
         "Long_": -72.93620426,
         "Confirmed": 9209,
@@ -411,19 +300,10 @@ const mydata = [{
         "Active": 8508,
         "Admin2": "New Haven",
         "FIPS": "09009",
-        "Combined_Key": "New Haven, Connecticut, US",
-        "Incident_Rate": 1077.38222676152,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84009009,
-        "ISO3": "USA"
+        "Combined_Key": "New Haven, Connecticut, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1601,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.69158356,
         "Long_": -82.92752801,
         "Confirmed": 6042,
@@ -432,19 +312,10 @@ const mydata = [{
         "Active": 5344,
         "Admin2": "Macomb",
         "FIPS": "26099",
-        "Combined_Key": "Macomb, Michigan, US",
-        "Incident_Rate": 691.326495585671,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84026099,
-        "ISO3": "USA"
+        "Combined_Key": "Macomb, Michigan, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1931,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.16073095,
         "Long_": -71.20530408,
         "Confirmed": 6952,
@@ -453,19 +324,10 @@ const mydata = [{
         "Active": 6302,
         "Admin2": "Norfolk",
         "FIPS": "25021",
-        "Combined_Key": "Norfolk, Massachusetts, US",
-        "Incident_Rate": 983.622793675498,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025021,
-        "ISO3": "USA"
+        "Combined_Key": "Norfolk, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 818,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.6687626,
         "Long_": -70.94687179,
         "Confirmed": 11353,
@@ -474,19 +336,10 @@ const mydata = [{
         "Active": 10709,
         "Admin2": "Essex",
         "FIPS": "25009",
-        "Combined_Key": "Essex, Massachusetts, US",
-        "Incident_Rate": 1438.84800908453,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025009,
-        "ISO3": "USA"
+        "Combined_Key": "Essex, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2276,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.15027894,
         "Long_": -74.02560498,
         "Confirmed": 12451,
@@ -495,19 +348,10 @@ const mydata = [{
         "Active": 11889,
         "Admin2": "Rockland",
         "FIPS": "36087",
-        "Combined_Key": "Rockland, New York, US",
-        "Incident_Rate": 3821.79877159757,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036087,
-        "ISO3": "USA"
+        "Combined_Key": "Rockland, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1949,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.8895449,
         "Long_": -74.28089251,
         "Confirmed": 7462,
@@ -516,19 +360,10 @@ const mydata = [{
         "Active": 6922,
         "Admin2": "Ocean",
         "FIPS": "34029",
-        "Combined_Key": "Ocean, New Jersey, US",
-        "Incident_Rate": 1228.94796652097,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034029,
-        "ISO3": "USA"
+        "Combined_Key": "Ocean, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1836,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.21053671,
         "Long_": -75.36652296,
         "Confirmed": 5260,
@@ -537,19 +372,10 @@ const mydata = [{
         "Active": 4735,
         "Admin2": "Montgomery",
         "FIPS": "42091",
-        "Combined_Key": "Montgomery, Pennsylvania, US",
-        "Incident_Rate": 633.037073587551,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042091,
-        "ISO3": "USA"
+        "Combined_Key": "Montgomery, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1860,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.86095313,
         "Long_": -74.5455371,
         "Confirmed": 5854,
@@ -558,19 +384,10 @@ const mydata = [{
         "Active": 5338,
         "Admin2": "Morris",
         "FIPS": "34027",
-        "Combined_Key": "Morris, New Jersey, US",
-        "Incident_Rate": 1190.21236365115,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034027,
-        "ISO3": "USA"
+        "Combined_Key": "Morris, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1382,
-        "Province_State": "Washington",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 47.49137892,
         "Long_": -121.8346131,
         "Confirmed": 7007,
@@ -579,19 +396,10 @@ const mydata = [{
         "Active": 6507,
         "Admin2": "King",
         "FIPS": "53033",
-        "Combined_Key": "King, Washington, US",
-        "Incident_Rate": 311.037641458428,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84053033,
-        "ISO3": "USA"
+        "Combined_Key": "King, Washington, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1762,
-        "Province_State": "Florida",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 25.6112362,
         "Long_": -80.55170587,
         "Confirmed": 14007,
@@ -600,19 +408,10 @@ const mydata = [{
         "Active": 13520,
         "Admin2": "Miami-Dade",
         "FIPS": "12086",
-        "Combined_Key": "Miami-Dade, Florida, US",
-        "Incident_Rate": 515.543221418213,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84012086,
-        "ISO3": "USA"
+        "Combined_Key": "Miami-Dade, Florida, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1989,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 30.06971951,
         "Long_": -89.92660315,
         "Confirmed": 6682,
@@ -621,19 +420,10 @@ const mydata = [{
         "Active": 6214,
         "Admin2": "Orleans",
         "FIPS": "22071",
-        "Combined_Key": "Orleans, Louisiana, US",
-        "Incident_Rate": 1712.70095144357,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022071,
-        "ISO3": "USA"
+        "Combined_Key": "Orleans, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1080,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.13440424,
         "Long_": -72.63235561,
         "Confirmed": 4714,
@@ -642,19 +432,10 @@ const mydata = [{
         "Active": 4265,
         "Admin2": "Hampden",
         "FIPS": "25013",
-        "Combined_Key": "Hampden, Massachusetts, US",
-        "Incident_Rate": 1010.78109320457,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025013,
-        "ISO3": "USA"
+        "Combined_Key": "Hampden, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2923,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.35026951,
         "Long_": -71.90493363,
         "Confirmed": 7743,
@@ -663,19 +444,10 @@ const mydata = [{
         "Active": 7299,
         "Admin2": "Worcester",
         "FIPS": "25027",
-        "Combined_Key": "Worcester, Massachusetts, US",
-        "Incident_Rate": 932.192983089781,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025027,
-        "ISO3": "USA"
+        "Combined_Key": "Worcester, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1798,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.26549699,
         "Long_": -74.22240686,
         "Confirmed": 6894,
@@ -684,19 +456,10 @@ const mydata = [{
         "Active": 6451,
         "Admin2": "Monmouth",
         "FIPS": "34025",
-        "Combined_Key": "Monmouth, New Jersey, US",
-        "Incident_Rate": 1114.10079266962,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034025,
-        "ISO3": "USA"
+        "Combined_Key": "Monmouth, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2675,
-        "Province_State": "Rhode Island",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": null,
         "Long_": null,
         "Confirmed": 2755,
@@ -705,19 +468,10 @@ const mydata = [{
         "Active": 2333,
         "Admin2": "Unassigned",
         "FIPS": "90044",
-        "Combined_Key": "Unassigned, Rhode Island, US",
-        "Incident_Rate": null,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84090044,
-        "ISO3": "USA"
+        "Combined_Key": "Unassigned, Rhode Island, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1651,
-        "Province_State": "Indiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.78163624,
         "Long_": -86.13826325,
         "Confirmed": 7336,
@@ -726,19 +480,10 @@ const mydata = [{
         "Active": 6920,
         "Admin2": "Marion",
         "FIPS": "18097",
-        "Combined_Key": "Marion, Indiana, US",
-        "Incident_Rate": 760.536688430844,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84018097,
-        "ISO3": "USA"
+        "Combined_Key": "Marion, Indiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1298,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 29.74075478,
         "Long_": -90.11115756,
         "Confirmed": 6709,
@@ -747,19 +492,10 @@ const mydata = [{
         "Active": 6312,
         "Admin2": "Jefferson",
         "FIPS": "22051",
-        "Combined_Key": "Jefferson, Louisiana, US",
-        "Incident_Rate": 1551.23897959042,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022051,
-        "ISO3": "USA"
+        "Combined_Key": "Jefferson, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 713,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.91680171,
         "Long_": -75.40243663,
         "Confirmed": 4976,
@@ -768,19 +504,10 @@ const mydata = [{
         "Active": 4581,
         "Admin2": "Delaware",
         "FIPS": "42045",
-        "Combined_Key": "Delaware, Pennsylvania, US",
-        "Incident_Rate": 877.993178614091,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042045,
-        "ISO3": "USA"
+        "Combined_Key": "Delaware, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2128,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.94070556,
         "Long_": -70.80802823,
         "Confirmed": 6382,
@@ -789,19 +516,10 @@ const mydata = [{
         "Active": 5989,
         "Admin2": "Plymouth",
         "FIPS": "25023",
-        "Combined_Key": "Plymouth, Massachusetts, US",
-        "Incident_Rate": 1224.47726601203,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025023,
-        "ISO3": "USA"
+        "Combined_Key": "Plymouth, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1148,
-        "Province_State": "Minnesota",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 45.00761521,
         "Long_": -93.47694895,
         "Confirmed": 3558,
@@ -810,19 +528,10 @@ const mydata = [{
         "Active": 3169,
         "Admin2": "Hennepin",
         "FIPS": "27053",
-        "Combined_Key": "Hennepin, Minnesota, US",
-        "Incident_Rate": 281.077511192146,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84027053,
-        "ISO3": "USA"
+        "Combined_Key": "Hennepin, Minnesota, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1830,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.13676329,
         "Long_": -77.20358245,
         "Confirmed": 6762,
@@ -831,19 +540,10 @@ const mydata = [{
         "Active": 6380,
         "Admin2": "Montgomery",
         "FIPS": "24031",
-        "Combined_Key": "Montgomery, Maryland, US",
-        "Incident_Rate": 643.57830297862,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024031,
-        "ISO3": "USA"
+        "Combined_Key": "Montgomery, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1982,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.40337468,
         "Long_": -74.30240757,
         "Confirmed": 9543,
@@ -852,19 +552,10 @@ const mydata = [{
         "Active": 9176,
         "Admin2": "Orange",
         "FIPS": "36071",
-        "Combined_Key": "Orange, New York, US",
-        "Incident_Rate": 2479.08765002338,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036071,
-        "ISO3": "USA"
+        "Combined_Key": "Orange, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 813,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.76249024,
         "Long_": -78.73063652,
         "Confirmed": 4453,
@@ -873,19 +564,10 @@ const mydata = [{
         "Active": 4096,
         "Admin2": "Erie",
         "FIPS": "36029",
-        "Combined_Key": "Erie, New York, US",
-        "Incident_Rate": 484.705595503221,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036029,
-        "ISO3": "USA"
+        "Combined_Key": "Erie, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2175,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.83070039,
         "Long_": -76.8496441,
         "Confirmed": 9496,
@@ -894,19 +576,10 @@ const mydata = [{
         "Active": 9143,
         "Admin2": "Prince George's",
         "FIPS": "24033",
-        "Combined_Key": "Prince George's, Maryland, US",
-        "Incident_Rate": 1044.28879819911,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024033,
-        "ISO3": "USA"
+        "Combined_Key": "Prince George's, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 277,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.33682119,
         "Long_": -75.10836643,
         "Confirmed": 3966,
@@ -915,19 +588,10 @@ const mydata = [{
         "Active": 3625,
         "Admin2": "Bucks",
         "FIPS": "42017",
-        "Combined_Key": "Bucks, Pennsylvania, US",
-        "Incident_Rate": 631.257262005189,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042017,
-        "ISO3": "USA"
+        "Combined_Key": "Bucks, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1749,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.28047017,
         "Long_": -74.70479631,
         "Confirmed": 5317,
@@ -936,19 +600,10 @@ const mydata = [{
         "Active": 4983,
         "Admin2": "Mercer",
         "FIPS": "34021",
-        "Combined_Key": "Mercer, New Jersey, US",
-        "Incident_Rate": 1447.07835506083,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034021,
-        "ISO3": "USA"
+        "Combined_Key": "Mercer, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2435,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.56465737,
         "Long_": -74.61683016,
         "Confirmed": 4054,
@@ -957,19 +612,10 @@ const mydata = [{
         "Active": 3721,
         "Admin2": "Somerset",
         "FIPS": "34035",
-        "Combined_Key": "Somerset, New Jersey, US",
-        "Incident_Rate": 1232.46608742179,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034035,
-        "ISO3": "USA"
+        "Combined_Key": "Somerset, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 734,
-        "Province_State": "District of Columbia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.90417773,
         "Long_": -77.01655992,
         "Confirmed": 6272,
@@ -978,19 +624,10 @@ const mydata = [{
         "Active": 5949,
         "Admin2": "District of Columbia",
         "FIPS": "11001",
-        "Combined_Key": "District of Columbia, District of Columbia, US",
-        "Incident_Rate": 888.701223806197,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84011001,
-        "ISO3": "USA"
+        "Combined_Key": "District of Columbia, District of Columbia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 249,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.79228404,
         "Long_": -71.10872211,
         "Confirmed": 4931,
@@ -999,19 +636,10 @@ const mydata = [{
         "Active": 4665,
         "Admin2": "Bristol",
         "FIPS": "25005",
-        "Combined_Key": "Bristol, Massachusetts, US",
-        "Incident_Rate": 872.408296282667,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025005,
-        "ISO3": "USA"
+        "Combined_Key": "Bristol, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2468,
-        "Province_State": "Missouri",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.6377004,
         "Long_": -90.4458375,
         "Confirmed": 3932,
@@ -1020,19 +648,10 @@ const mydata = [{
         "Active": 3670,
         "Admin2": "St. Louis",
         "FIPS": "29189",
-        "Combined_Key": "St. Louis, Missouri, US",
-        "Incident_Rate": 395.491875418048,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84029189,
-        "ISO3": "USA"
+        "Combined_Key": "St. Louis, Missouri, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 491,
-        "Province_State": "Nevada",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 36.21458855,
         "Long_": -115.0130241,
         "Confirmed": 4750,
@@ -1041,19 +660,10 @@ const mydata = [{
         "Active": 4490,
         "Admin2": "Clark",
         "FIPS": "32003",
-        "Combined_Key": "Clark, Nevada, US",
-        "Incident_Rate": 209.554355090958,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84032003,
-        "ISO3": "USA"
+        "Combined_Key": "Clark, Nevada, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 259,
-        "Province_State": "Florida",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 26.15184651,
         "Long_": -80.48725556,
         "Confirmed": 5858,
@@ -1062,19 +672,10 @@ const mydata = [{
         "Active": 5601,
         "Admin2": "Broward",
         "FIPS": "12011",
-        "Combined_Key": "Broward, Florida, US",
-        "Incident_Rate": 299.982896161264,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84012011,
-        "ISO3": "USA"
+        "Combined_Key": "Broward, Florida, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 762,
-        "Province_State": "Illinois",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.85116968,
         "Long_": -88.08642662,
         "Confirmed": 4603,
@@ -1083,19 +684,10 @@ const mydata = [{
         "Active": 4355,
         "Admin2": "DuPage",
         "FIPS": "17043",
-        "Combined_Key": "DuPage, Illinois, US",
-        "Incident_Rate": 498.742579267348,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84017043,
-        "ISO3": "USA"
+        "Combined_Key": "DuPage, Illinois, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1642,
-        "Province_State": "Arizona",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.34835867,
         "Long_": -112.4918154,
         "Confirmed": 5827,
@@ -1104,19 +696,10 @@ const mydata = [{
         "Active": 5580,
         "Admin2": "Maricopa",
         "FIPS": "04013",
-        "Combined_Key": "Maricopa, Arizona, US",
-        "Incident_Rate": 129.909970406299,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84004013,
-        "ISO3": "USA"
+        "Combined_Key": "Maricopa, Arizona, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 828,
-        "Province_State": "Virginia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.83677558,
         "Long_": -77.27565836,
         "Confirmed": 5892,
@@ -1125,19 +708,10 @@ const mydata = [{
         "Active": 5653,
         "Admin2": "Fairfax",
         "FIPS": "51059",
-        "Combined_Key": "Fairfax, Virginia, US",
-        "Incident_Rate": 513.449733863631,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84051059,
-        "ISO3": "USA"
+        "Combined_Key": "Fairfax, Virginia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2032,
-        "Province_State": "Florida",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 26.64676272,
         "Long_": -80.46536002,
         "Confirmed": 3870,
@@ -1146,19 +720,10 @@ const mydata = [{
         "Active": 3633,
         "Admin2": "Palm Beach",
         "FIPS": "12099",
-        "Combined_Key": "Palm Beach, Florida, US",
-        "Incident_Rate": 258.556758887471,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84012099,
-        "ISO3": "USA"
+        "Combined_Key": "Palm Beach, Florida, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1450,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.03904563,
         "Long_": -76.24770128,
         "Confirmed": 2223,
@@ -1167,19 +732,10 @@ const mydata = [{
         "Active": 1995,
         "Admin2": "Lancaster",
         "FIPS": "42071",
-        "Combined_Key": "Lancaster, Pennsylvania, US",
-        "Incident_Rate": 407.348769707764,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042071,
-        "ISO3": "USA"
+        "Combined_Key": "Lancaster, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 337,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.80343818,
         "Long_": -74.96388753,
         "Confirmed": 4870,
@@ -1188,19 +744,10 @@ const mydata = [{
         "Active": 4645,
         "Admin2": "Camden",
         "FIPS": "34007",
-        "Combined_Key": "Camden, New Jersey, US",
-        "Incident_Rate": 961.555548096535,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034007,
-        "ISO3": "USA"
+        "Combined_Key": "Camden, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1777,
-        "Province_State": "Wisconsin",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 43.00486062,
         "Long_": -87.96733172,
         "Confirmed": 3952,
@@ -1209,19 +756,10 @@ const mydata = [{
         "Active": 3727,
         "Admin2": "Milwaukee",
         "FIPS": "55079",
-        "Combined_Key": "Milwaukee, Wisconsin, US",
-        "Incident_Rate": 417.880020217272,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84055079,
-        "ISO3": "USA"
+        "Combined_Key": "Milwaukee, Wisconsin, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 952,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 43.02244215,
         "Long_": -83.70589709,
         "Confirmed": 1758,
@@ -1230,19 +768,10 @@ const mydata = [{
         "Active": 1534,
         "Admin2": "Genesee",
         "FIPS": "26049",
-        "Combined_Key": "Genesee, Michigan, US",
-        "Incident_Rate": 433.204456239697,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84026049,
-        "ISO3": "USA"
+        "Combined_Key": "Genesee, Michigan, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 718,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.76018276,
         "Long_": -104.8725695,
         "Confirmed": 4070,
@@ -1251,19 +780,10 @@ const mydata = [{
         "Active": 3864,
         "Admin2": "Denver",
         "FIPS": "08031",
-        "Combined_Key": "Denver, Colorado, US",
-        "Incident_Rate": 559.672502203625,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008031,
-        "ISO3": "USA"
+        "Combined_Key": "Denver, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2257,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.74314981,
         "Long_": -115.9933578,
         "Confirmed": 5039,
@@ -1272,19 +792,10 @@ const mydata = [{
         "Active": 4834,
         "Admin2": "Riverside",
         "FIPS": "06065",
-        "Combined_Key": "Riverside, California, US",
-        "Incident_Rate": 203.963010605753,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006065,
-        "ISO3": "USA"
+        "Combined_Key": "Riverside, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2882,
-        "Province_State": "Illinois",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.44619267,
         "Long_": -87.97862712,
         "Confirmed": 3684,
@@ -1293,19 +804,10 @@ const mydata = [{
         "Active": 3482,
         "Admin2": "Will",
         "FIPS": "17197",
-        "Combined_Key": "Will, Illinois, US",
-        "Incident_Rate": 533.338738141393,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84017197,
-        "ISO3": "USA"
+        "Combined_Key": "Will, Illinois, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 293,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.87681124,
         "Long_": -74.66927768,
         "Confirmed": 3574,
@@ -1314,19 +816,10 @@ const mydata = [{
         "Active": 3376,
         "Admin2": "Burlington",
         "FIPS": "34005",
-        "Combined_Key": "Burlington, New Jersey, US",
-        "Incident_Rate": 802.51667793124,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034005,
-        "ISO3": "USA"
+        "Combined_Key": "Burlington, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 115,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.45784712,
         "Long_": -76.62911955,
         "Confirmed": 3862,
@@ -1335,19 +828,10 @@ const mydata = [{
         "Active": 3671,
         "Admin2": "Baltimore",
         "FIPS": "24005",
-        "Combined_Key": "Baltimore, Maryland, US",
-        "Incident_Rate": 466.7802796814,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024005,
-        "ISO3": "USA"
+        "Combined_Key": "Baltimore, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 448,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.97291773,
         "Long_": -75.74768357,
         "Confirmed": 1865,
@@ -1356,19 +840,10 @@ const mydata = [{
         "Active": 1681,
         "Admin2": "Chester",
         "FIPS": "42029",
-        "Combined_Key": "Chester, Pennsylvania, US",
-        "Incident_Rate": 355.245538477949,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042029,
-        "ISO3": "USA"
+        "Combined_Key": "Chester, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 777,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 30.53842039,
         "Long_": -91.09777565,
         "Confirmed": 2374,
@@ -1377,19 +852,10 @@ const mydata = [{
         "Active": 2192,
         "Admin2": "East Baton Rouge",
         "FIPS": "22033",
-        "Combined_Key": "East Baton Rouge, Louisiana, US",
-        "Incident_Rate": 539.473116104886,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022033,
-        "ISO3": "USA"
+        "Combined_Key": "East Baton Rouge, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 73,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.64977461,
         "Long_": -104.3353617,
         "Confirmed": 3272,
@@ -1398,19 +864,10 @@ const mydata = [{
         "Active": 3096,
         "Admin2": "Arapahoe",
         "FIPS": "08005",
-        "Combined_Key": "Arapahoe, Colorado, US",
-        "Incident_Rate": 498.33229260269,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008005,
-        "ISO3": "USA"
+        "Combined_Key": "Arapahoe, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2319,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.03484597,
         "Long_": -116.7365326,
         "Confirmed": 4926,
@@ -1419,19 +876,10 @@ const mydata = [{
         "Active": 4751,
         "Admin2": "San Diego",
         "FIPS": "06073",
-        "Combined_Key": "San Diego, California, US",
-        "Incident_Rate": 147.558809344792,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006073,
-        "ISO3": "USA"
+        "Combined_Key": "San Diego, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1434,
-        "Province_State": "Illinois",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.3224907,
         "Long_": -88.00367925,
         "Confirmed": 5245,
@@ -1440,19 +888,10 @@ const mydata = [{
         "Active": 5072,
         "Admin2": "Lake",
         "FIPS": "17097",
-        "Combined_Key": "Lake, Illinois, US",
-        "Incident_Rate": 753.013129275629,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84017097,
-        "ISO3": "USA"
+        "Combined_Key": "Lake, Illinois, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1116,
-        "Province_State": "Texas",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 29.86,
         "Long_": -95.39,
         "Confirmed": 7878,
@@ -1461,19 +900,10 @@ const mydata = [{
         "Active": 7706,
         "Admin2": "Harris",
         "FIPS": "48201",
-        "Combined_Key": "Harris, Texas, US",
-        "Incident_Rate": 167.143152657625,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84048201,
-        "ISO3": "USA"
+        "Combined_Key": "Harris, Texas, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 179,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.41570541,
         "Long_": -75.92457766,
         "Confirmed": 3371,
@@ -1482,19 +912,10 @@ const mydata = [{
         "Active": 3201,
         "Admin2": "Berks",
         "FIPS": "42011",
-        "Combined_Key": "Berks, Pennsylvania, US",
-        "Incident_Rate": 800.40079398999,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042011,
-        "ISO3": "USA"
+        "Combined_Key": "Berks, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 116,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.30211911,
         "Long_": -76.61151012,
         "Confirmed": 3317,
@@ -1503,19 +924,10 @@ const mydata = [{
         "Active": 3148,
         "Admin2": "Baltimore City",
         "FIPS": "24510",
-        "Combined_Key": "Baltimore City, Maryland, US",
-        "Incident_Rate": 558.897369795616,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024510,
-        "ISO3": "USA"
+        "Combined_Key": "Baltimore City, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1585,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.62101218,
         "Long_": -83.65468618,
         "Confirmed": 1757,
@@ -1524,19 +936,10 @@ const mydata = [{
         "Active": 1593,
         "Admin2": "Lucas",
         "FIPS": "39095",
-        "Combined_Key": "Lucas, Ohio, US",
-        "Incident_Rate": 410.180507437878,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039095,
-        "ISO3": "USA"
+        "Combined_Key": "Lucas, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1935,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.75182733,
         "Long_": -75.30471829,
         "Confirmed": 2453,
@@ -1545,19 +948,10 @@ const mydata = [{
         "Active": 2295,
         "Admin2": "Northampton",
         "FIPS": "42095",
-        "Combined_Key": "Northampton, Pennsylvania, US",
-        "Incident_Rate": 803.511472885992,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042095,
-        "ISO3": "USA"
+        "Combined_Key": "Northampton, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1812,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 43.14638895,
         "Long_": -77.69322942,
         "Confirmed": 1821,
@@ -1566,19 +960,10 @@ const mydata = [{
         "Active": 1674,
         "Admin2": "Monroe",
         "FIPS": "36055",
-        "Combined_Key": "Monroe, New York, US",
-        "Incident_Rate": 245.493886245063,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036055,
-        "ISO3": "USA"
+        "Combined_Key": "Monroe, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 656,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.424119,
         "Long_": -81.65918339,
         "Confirmed": 2795,
@@ -1587,19 +972,10 @@ const mydata = [{
         "Active": 2649,
         "Admin2": "Cuyahoga",
         "FIPS": "39035",
-        "Combined_Key": "Cuyahoga, Ohio, US",
-        "Incident_Rate": 226.302596123951,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039035,
-        "ISO3": "USA"
+        "Combined_Key": "Cuyahoga, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 921,
-        "Province_State": "Georgia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.79216944,
         "Long_": -84.46319413,
         "Confirmed": 3509,
@@ -1608,19 +984,10 @@ const mydata = [{
         "Active": 3365,
         "Admin2": "Fulton",
         "FIPS": "13121",
-        "Combined_Key": "Fulton, Georgia, US",
-        "Incident_Rate": 329.812761469899,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84013121,
-        "ISO3": "USA"
+        "Combined_Key": "Fulton, Georgia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 666,
-        "Province_State": "Texas",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 32.76670599,
         "Long_": -96.7779605,
         "Confirmed": 5870,
@@ -1629,19 +996,10 @@ const mydata = [{
         "Active": 5727,
         "Admin2": "Dallas",
         "FIPS": "48113",
-        "Combined_Key": "Dallas, Texas, US",
-        "Incident_Rate": 222.726782914617,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84048113,
-        "ISO3": "USA"
+        "Combined_Key": "Dallas, Texas, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2110,
-        "Province_State": "Arizona",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 32.0971334,
         "Long_": -111.7890033,
         "Confirmed": 1585,
@@ -1650,19 +1008,10 @@ const mydata = [{
         "Active": 1451,
         "Admin2": "Pima",
         "FIPS": "04019",
-        "Combined_Key": "Pima, Arizona, US",
-        "Incident_Rate": 151.344579620139,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84004019,
-        "ISO3": "USA"
+        "Combined_Key": "Pima, Arizona, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 309,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 32.57991587,
         "Long_": -93.88375652,
         "Confirmed": 1751,
@@ -1671,19 +1020,10 @@ const mydata = [{
         "Active": 1618,
         "Admin2": "Caddo",
         "FIPS": "22017",
-        "Combined_Key": "Caddo, Louisiana, US",
-        "Incident_Rate": 728.963714176283,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022017,
-        "ISO3": "USA"
+        "Combined_Key": "Caddo, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2474,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 30.40942847,
         "Long_": -89.95642711,
         "Confirmed": 1452,
@@ -1692,19 +1032,10 @@ const mydata = [{
         "Active": 1319,
         "Admin2": "St. Tammany",
         "FIPS": "22103",
-        "Combined_Key": "St. Tammany, Louisiana, US",
-        "Incident_Rate": 557.563004235482,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022103,
-        "ISO3": "USA"
+        "Combined_Key": "St. Tammany, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2338,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 37.23104908,
         "Long_": -121.6970462,
         "Confirmed": 2339,
@@ -1713,19 +1044,10 @@ const mydata = [{
         "Active": 2210,
         "Admin2": "Santa Clara",
         "FIPS": "06085",
-        "Combined_Key": "Santa Clara, California, US",
-        "Incident_Rate": 121.326740849401,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006085,
-        "ISO3": "USA"
+        "Combined_Key": "Santa Clara, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2538,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.13891592,
         "Long_": -74.69118243,
         "Confirmed": 1026,
@@ -1734,19 +1056,10 @@ const mydata = [{
         "Active": 899,
         "Admin2": "Sussex",
         "FIPS": "34037",
-        "Combined_Key": "Sussex, New Jersey, US",
-        "Incident_Rate": 730.311485678492,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034037,
-        "ISO3": "USA"
+        "Combined_Key": "Sussex, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 749,
-        "Province_State": "Georgia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 31.53328528,
         "Long_": -84.21722377,
         "Confirmed": 1593,
@@ -1755,19 +1068,10 @@ const mydata = [{
         "Active": 1467,
         "Admin2": "Dougherty",
         "FIPS": "13095",
-        "Combined_Key": "Dougherty, Georgia, US",
-        "Incident_Rate": 1811.13283914685,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84013095,
-        "ISO3": "USA"
+        "Combined_Key": "Dougherty, Georgia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1435,
-        "Province_State": "Indiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.41874274,
         "Long_": -87.38277575,
         "Confirmed": 2445,
@@ -1776,19 +1080,10 @@ const mydata = [{
         "Active": 2321,
         "Admin2": "Lake",
         "FIPS": "18089",
-        "Combined_Key": "Lake, Indiana, US",
-        "Incident_Rate": 503.611792549017,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84018089,
-        "ISO3": "USA"
+        "Combined_Key": "Lake, Indiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 41,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.46809875,
         "Long_": -79.98167747,
         "Confirmed": 1503,
@@ -1797,19 +1092,10 @@ const mydata = [{
         "Active": 1381,
         "Admin2": "Allegheny",
         "FIPS": "42003",
-        "Combined_Key": "Allegheny, Pennsylvania, US",
-        "Incident_Rate": 123.597399767278,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042003,
-        "ISO3": "USA"
+        "Combined_Key": "Allegheny, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1632,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.01631101,
         "Long_": -80.77287029,
         "Confirmed": 1119,
@@ -1818,19 +1104,10 @@ const mydata = [{
         "Active": 997,
         "Admin2": "Mahoning",
         "FIPS": "39099",
-        "Combined_Key": "Mahoning, Ohio, US",
-        "Incident_Rate": 489.323648893884,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039099,
-        "ISO3": "USA"
+        "Combined_Key": "Mahoning, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 63,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.00670238,
         "Long_": -76.60329337,
         "Confirmed": 2463,
@@ -1839,19 +1116,10 @@ const mydata = [{
         "Active": 2342,
         "Admin2": "Anne Arundel",
         "FIPS": "24003",
-        "Combined_Key": "Anne Arundel, Maryland, US",
-        "Incident_Rate": 425.216751779074,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024003,
-        "ISO3": "USA"
+        "Combined_Key": "Anne Arundel, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1500,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.6154815,
         "Long_": -75.59435245,
         "Confirmed": 3241,
@@ -1860,19 +1128,10 @@ const mydata = [{
         "Active": 3120,
         "Admin2": "Lehigh",
         "FIPS": "42077",
-        "Combined_Key": "Lehigh, Pennsylvania, US",
-        "Incident_Rate": 877.563508954343,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042077,
-        "ISO3": "USA"
+        "Combined_Key": "Lehigh, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 900,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.96995815,
         "Long_": -83.01115755,
         "Confirmed": 3777,
@@ -1881,19 +1140,10 @@ const mydata = [{
         "Active": 3658,
         "Admin2": "Franklin",
         "FIPS": "39049",
-        "Combined_Key": "Franklin, Ohio, US",
-        "Incident_Rate": 286.841297856247,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039049,
-        "ISO3": "USA"
+        "Combined_Key": "Franklin, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 543,
-        "Province_State": "Georgia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.94243204,
         "Long_": -84.5761255,
         "Confirmed": 2175,
@@ -1902,19 +1152,10 @@ const mydata = [{
         "Active": 2058,
         "Admin2": "Cobb",
         "FIPS": "13067",
-        "Combined_Key": "Cobb, Georgia, US",
-        "Incident_Rate": 286.131125672737,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84013067,
-        "ISO3": "USA"
+        "Combined_Key": "Cobb, Georgia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1422,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.43564672,
         "Long_": -75.60379201,
         "Confirmed": 1172,
@@ -1923,19 +1164,10 @@ const mydata = [{
         "Active": 1055,
         "Admin2": "Lackawanna",
         "FIPS": "42069",
-        "Combined_Key": "Lackawanna, Pennsylvania, US",
-        "Incident_Rate": 558.962961549835,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042069,
-        "ISO3": "USA"
+        "Combined_Key": "Lackawanna, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2429,
-        "Province_State": "Washington",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 48.04615983,
         "Long_": -121.7170703,
         "Confirmed": 2681,
@@ -1944,19 +1176,10 @@ const mydata = [{
         "Active": 2564,
         "Admin2": "Snohomish",
         "FIPS": "53061",
-        "Combined_Key": "Snohomish, Washington, US",
-        "Incident_Rate": 326.122788088307,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84053061,
-        "ISO3": "USA"
+        "Combined_Key": "Snohomish, Washington, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1764,
-        "Province_State": "Connecticut",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.45949668,
         "Long_": -72.53714864,
         "Confirmed": 798,
@@ -1965,19 +1188,10 @@ const mydata = [{
         "Active": 683,
         "Admin2": "Middlesex",
         "FIPS": "09007",
-        "Combined_Key": "Middlesex, Connecticut, US",
-        "Incident_Rate": 491.270408037627,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84009007,
-        "ISO3": "USA"
+        "Combined_Key": "Middlesex, Connecticut, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2318,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 34.84060306,
         "Long_": -116.1774685,
         "Confirmed": 2902,
@@ -1986,19 +1200,10 @@ const mydata = [{
         "Active": 2788,
         "Admin2": "San Bernardino",
         "FIPS": "06071",
-        "Combined_Key": "San Bernardino, California, US",
-        "Incident_Rate": 133.114075827319,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006071,
-        "ISO3": "USA"
+        "Combined_Key": "San Bernardino, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2845,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.55499405,
         "Long_": -104.3929621,
         "Confirmed": 2139,
@@ -2007,19 +1212,10 @@ const mydata = [{
         "Active": 2026,
         "Admin2": "Weld",
         "FIPS": "08123",
-        "Combined_Key": "Weld, Colorado, US",
-        "Incident_Rate": 659.184201767686,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008123,
-        "ISO3": "USA"
+        "Combined_Key": "Weld, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1590,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.17823008,
         "Long_": -75.98447579,
         "Confirmed": 2416,
@@ -2028,19 +1224,10 @@ const mydata = [{
         "Active": 2305,
         "Admin2": "Luzerne",
         "FIPS": "42079",
-        "Combined_Key": "Luzerne, Pennsylvania, US",
-        "Incident_Rate": 761.143858079435,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042079,
-        "ISO3": "USA"
+        "Combined_Key": "Luzerne, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1149,
-        "Province_State": "Virginia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 37.53460572,
         "Long_": -77.39326555,
         "Confirmed": 1067,
@@ -2049,19 +1236,10 @@ const mydata = [{
         "Active": 958,
         "Admin2": "Henrico",
         "FIPS": "51087",
-        "Combined_Key": "Henrico, Virginia, US",
-        "Incident_Rate": 322.533840359352,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84051087,
-        "ISO3": "USA"
+        "Combined_Key": "Henrico, Virginia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1297,
-        "Province_State": "Kentucky",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.18664655,
         "Long_": -85.65931031,
         "Confirmed": 1642,
@@ -2070,19 +1248,10 @@ const mydata = [{
         "Active": 1533,
         "Admin2": "Jefferson",
         "FIPS": "21111",
-        "Combined_Key": "Jefferson, Kentucky, US",
-        "Incident_Rate": 214.148680742399,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84021111,
-        "ISO3": "USA"
+        "Combined_Key": "Jefferson, Kentucky, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1554,
-        "Province_State": "Connecticut",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.7937534,
         "Long_": -73.2451475,
         "Confirmed": 1153,
@@ -2091,19 +1260,10 @@ const mydata = [{
         "Active": 1046,
         "Admin2": "Litchfield",
         "FIPS": "09005",
-        "Combined_Key": "Litchfield, Connecticut, US",
-        "Incident_Rate": 639.372716030898,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84009005,
-        "ISO3": "USA"
+        "Combined_Key": "Litchfield, Connecticut, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2769,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.85951833,
         "Long_": -74.99556527,
         "Confirmed": 1044,
@@ -2112,19 +1272,10 @@ const mydata = [{
         "Active": 940,
         "Admin2": "Warren",
         "FIPS": "34041",
-        "Combined_Key": "Warren, New Jersey, US",
-        "Incident_Rate": 991.763800621277,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034041,
-        "ISO3": "USA"
+        "Combined_Key": "Warren, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1076,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.19673558,
         "Long_": -84.54502924,
         "Confirmed": 1757,
@@ -2133,19 +1284,10 @@ const mydata = [{
         "Active": 1656,
         "Admin2": "Hamilton",
         "FIPS": "39061",
-        "Combined_Key": "Hamilton, Ohio, US",
-        "Incident_Rate": 214.930646027453,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039061,
-        "ISO3": "USA"
+        "Combined_Key": "Hamilton, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2557,
-        "Province_State": "Texas",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 32.77143818,
         "Long_": -97.29101614,
         "Confirmed": 3210,
@@ -2154,19 +1296,10 @@ const mydata = [{
         "Active": 3109,
         "Admin2": "Tarrant",
         "FIPS": "48439",
-        "Combined_Key": "Tarrant, Texas, US",
-        "Incident_Rate": 152.674297210721,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84048439,
-        "ISO3": "USA"
+        "Combined_Key": "Tarrant, Texas, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 771,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.7648606,
         "Long_": -73.74356679,
         "Confirmed": 3359,
@@ -2175,19 +1308,10 @@ const mydata = [{
         "Active": 3261,
         "Admin2": "Dutchess",
         "FIPS": "36027",
-        "Combined_Key": "Dutchess, New York, US",
-        "Incident_Rate": 1141.67046203835,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036027,
-        "ISO3": "USA"
+        "Combined_Key": "Dutchess, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1289,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.58635604,
         "Long_": -105.2517692,
         "Confirmed": 1649,
@@ -2196,19 +1320,10 @@ const mydata = [{
         "Active": 1555,
         "Admin2": "Jefferson",
         "FIPS": "08059",
-        "Combined_Key": "Jefferson, Colorado, US",
-        "Incident_Rate": 282.905086973156,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008059,
-        "ISO3": "USA"
+        "Combined_Key": "Jefferson, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1901,
-        "Province_State": "Delaware",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.57992638,
         "Long_": -75.64054974,
         "Confirmed": 2275,
@@ -2217,19 +1332,10 @@ const mydata = [{
         "Active": 2182,
         "Admin2": "New Castle",
         "FIPS": "10003",
-        "Combined_Key": "New Castle, Delaware, US",
-        "Incident_Rate": 407.156650613062,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84010003,
-        "ISO3": "USA"
+        "Combined_Key": "New Castle, Delaware, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2537,
-        "Province_State": "Delaware",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.66143781,
         "Long_": -75.39031349,
         "Confirmed": 2990,
@@ -2238,19 +1344,10 @@ const mydata = [{
         "Active": 2900,
         "Admin2": "Sussex",
         "FIPS": "10005",
-        "Combined_Key": "Sussex, Delaware, US",
-        "Incident_Rate": 1276.55032554168,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84010005,
-        "ISO3": "USA"
+        "Combined_Key": "Sussex, Delaware, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1353,
-        "Province_State": "Illinois",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.93842729,
         "Long_": -88.42861412,
         "Confirmed": 3003,
@@ -2259,19 +1356,10 @@ const mydata = [{
         "Active": 2914,
         "Admin2": "Kane",
         "FIPS": "17089",
-        "Combined_Key": "Kane, Illinois, US",
-        "Incident_Rate": 564.046408453746,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84017089,
-        "ISO3": "USA"
+        "Combined_Key": "Kane, Illinois, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2469,
-        "Province_State": "Missouri",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.63555736,
         "Long_": -90.24349225,
         "Confirmed": 1513,
@@ -2280,19 +1368,10 @@ const mydata = [{
         "Active": 1425,
         "Admin2": "St. Louis City",
         "FIPS": "29510",
-        "Combined_Key": "St. Louis City, Missouri, US",
-        "Incident_Rate": 503.366868944959,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84029510,
-        "ISO3": "USA"
+        "Combined_Key": "St. Louis City, Missouri, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1060,
-        "Province_State": "Georgia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.96044201,
         "Long_": -84.02137802,
         "Confirmed": 2447,
@@ -2301,19 +1380,10 @@ const mydata = [{
         "Active": 2360,
         "Admin2": "Gwinnett",
         "FIPS": "13135",
-        "Combined_Key": "Gwinnett, Georgia, US",
-        "Incident_Rate": 261.361815754339,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84013135,
-        "ISO3": "USA"
+        "Combined_Key": "Gwinnett, Georgia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1328,
-        "Province_State": "Indiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.48994426,
         "Long_": -86.10149107,
         "Confirmed": 807,
@@ -2322,19 +1392,10 @@ const mydata = [{
         "Active": 722,
         "Admin2": "Johnson",
         "FIPS": "18081",
-        "Combined_Key": "Johnson, Indiana, US",
-        "Incident_Rate": 510.220210284067,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84018081,
-        "ISO3": "USA"
+        "Combined_Key": "Johnson, Indiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1794,
-        "Province_State": "Alabama",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 30.78472347,
         "Long_": -88.20842409,
         "Confirmed": 1461,
@@ -2343,19 +1404,10 @@ const mydata = [{
         "Active": 1376,
         "Admin2": "Mobile",
         "FIPS": "01097",
-        "Combined_Key": "Mobile, Alabama, US",
-        "Incident_Rate": 353.573243629147,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84001097,
-        "ISO3": "USA"
+        "Combined_Key": "Mobile, Alabama, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2304,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 43.33433923,
         "Long_": -84.0513121,
         "Confirmed": 789,
@@ -2364,19 +1416,10 @@ const mydata = [{
         "Active": 706,
         "Admin2": "Saginaw",
         "FIPS": "26145",
-        "Combined_Key": "Saginaw, Michigan, US",
-        "Incident_Rate": 414.088454332184,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84026145,
-        "ISO3": "USA"
+        "Combined_Key": "Saginaw, Michigan, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 9,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.87432092,
         "Long_": -104.3362578,
         "Confirmed": 2242,
@@ -2385,19 +1428,10 @@ const mydata = [{
         "Active": 2161,
         "Admin2": "Adams",
         "FIPS": "08001",
-        "Combined_Key": "Adams, Colorado, US",
-        "Incident_Rate": 433.302861692896,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008001,
-        "ISO3": "USA"
+        "Combined_Key": "Adams, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 974,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.71581067,
         "Long_": -75.13995546,
         "Confirmed": 1654,
@@ -2406,19 +1440,10 @@ const mydata = [{
         "Active": 1573,
         "Admin2": "Gloucester",
         "FIPS": "34015",
-        "Combined_Key": "Gloucester, New Jersey, US",
-        "Incident_Rate": 567.145345567763,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034015,
-        "ISO3": "USA"
+        "Combined_Key": "Gloucester, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2814,
-        "Province_State": "Michigan",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 42.253105,
         "Long_": -83.83853204,
         "Confirmed": 1182,
@@ -2427,19 +1452,10 @@ const mydata = [{
         "Active": 1101,
         "Admin2": "Washtenaw",
         "FIPS": "26161",
-        "Combined_Key": "Washtenaw, Michigan, US",
-        "Incident_Rate": 321.544283067783,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84026161,
-        "ISO3": "USA"
+        "Combined_Key": "Washtenaw, Michigan, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1071,
-        "Province_State": "Indiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.07306535,
         "Long_": -86.05244729,
         "Confirmed": 925,
@@ -2448,19 +1464,10 @@ const mydata = [{
         "Active": 845,
         "Admin2": "Hamilton",
         "FIPS": "18057",
-        "Combined_Key": "Hamilton, Indiana, US",
-        "Incident_Rate": 273.65973296727,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84018057,
-        "ISO3": "USA"
+        "Combined_Key": "Hamilton, Indiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 150,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.6825484,
         "Long_": -80.34921611,
         "Confirmed": 491,
@@ -2469,19 +1476,10 @@ const mydata = [{
         "Active": 413,
         "Admin2": "Beaver",
         "FIPS": "42007",
-        "Combined_Key": "Beaver, Pennsylvania, US",
-        "Incident_Rate": 299.519914109157,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042007,
-        "ISO3": "USA"
+        "Combined_Key": "Beaver, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 794,
-        "Province_State": "Colorado",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 38.83240149,
         "Long_": -104.5251411,
         "Confirmed": 1124,
@@ -2490,19 +1488,10 @@ const mydata = [{
         "Active": 1046,
         "Admin2": "El Paso",
         "FIPS": "08041",
-        "Combined_Key": "El Paso, Colorado, US",
-        "Incident_Rate": 156.023781133616,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84008041,
-        "ISO3": "USA"
+        "Combined_Key": "El Paso, Colorado, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2525,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.12464734,
         "Long_": -81.53123079,
         "Confirmed": 892,
@@ -2511,19 +1500,10 @@ const mydata = [{
         "Active": 814,
         "Admin2": "Summit",
         "FIPS": "39153",
-        "Combined_Key": "Summit, Ohio, US",
-        "Incident_Rate": 164.875890228146,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039153,
-        "ISO3": "USA"
+        "Combined_Key": "Summit, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1979,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.70147516,
         "Long_": -117.7645998,
         "Confirmed": 3502,
@@ -2532,19 +1512,10 @@ const mydata = [{
         "Active": 3426,
         "Admin2": "Orange",
         "FIPS": "06059",
-        "Combined_Key": "Orange, California, US",
-        "Incident_Rate": 110.275177819511,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006059,
-        "ISO3": "USA"
+        "Combined_Key": "Orange, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2461,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 30.12597499,
         "Long_": -90.4753503,
         "Confirmed": 801,
@@ -2553,19 +1524,10 @@ const mydata = [{
         "Active": 725,
         "Admin2": "St. John the Baptist",
         "FIPS": "22095",
-        "Combined_Key": "St. John the Baptist, Louisiana, US",
-        "Incident_Rate": 1869.87884305624,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84022095,
-        "ISO3": "USA"
+        "Combined_Key": "St. John the Baptist, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 908,
-        "Province_State": "Maryland",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.47296601,
         "Long_": -77.39999394,
         "Confirmed": 1251,
@@ -2574,19 +1536,10 @@ const mydata = [{
         "Active": 1177,
         "Admin2": "Frederick",
         "FIPS": "24021",
-        "Combined_Key": "Frederick, Maryland, US",
-        "Incident_Rate": 481.993627358436,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84024021,
-        "ISO3": "USA"
+        "Combined_Key": "Frederick, Maryland, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1637,
-        "Province_State": "Florida",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 27.47196942,
         "Long_": -82.31831044,
         "Confirmed": 776,
@@ -2595,19 +1548,10 @@ const mydata = [{
         "Active": 702,
         "Admin2": "Manatee",
         "FIPS": "12081",
-        "Combined_Key": "Manatee, Florida, US",
-        "Incident_Rate": 192.435022182104,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84012081,
-        "ISO3": "USA"
+        "Combined_Key": "Manatee, Florida, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2654,
-        "Province_State": "Louisiana",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": null,
         "Long_": null,
         "Confirmed": 64,
@@ -2616,19 +1560,10 @@ const mydata = [{
         "Active": -10,
         "Admin2": "Unassigned",
         "FIPS": "90022",
-        "Combined_Key": "Unassigned, Louisiana, US",
-        "Incident_Rate": null,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84090022,
-        "ISO3": "USA"
+        "Combined_Key": "Unassigned, Louisiana, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 95,
-        "Province_State": "New Jersey",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.47538693,
         "Long_": -74.65848483,
         "Confirmed": 1510,
@@ -2637,19 +1572,10 @@ const mydata = [{
         "Active": 1438,
         "Admin2": "Atlantic",
         "FIPS": "34001",
-        "Combined_Key": "Atlantic, New Jersey, US",
-        "Incident_Rate": 572.685553912087,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84034001,
-        "ISO3": "USA"
+        "Combined_Key": "Atlantic, New Jersey, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 24,
-        "Province_State": "California",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 37.64629437,
         "Long_": -121.8929271,
         "Confirmed": 2064,
@@ -2658,19 +1584,10 @@ const mydata = [{
         "Active": 1993,
         "Admin2": "Alameda",
         "FIPS": "06001",
-        "Combined_Key": "Alameda, California, US",
-        "Incident_Rate": 123.49453638392,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84006001,
-        "ISO3": "USA"
+        "Combined_Key": "Alameda, California, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2324,
-        "Province_State": "New Mexico",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 36.50838318,
         "Long_": -108.320437,
         "Confirmed": 1034,
@@ -2679,19 +1596,10 @@ const mydata = [{
         "Active": 963,
         "Admin2": "San Juan",
         "FIPS": "35045",
-        "Combined_Key": "San Juan, New Mexico, US",
-        "Incident_Rate": 834.15350360606,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84035045,
-        "ISO3": "USA"
+        "Combined_Key": "San Juan, New Mexico, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 691,
-        "Province_State": "Georgia",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 33.76944049,
         "Long_": -84.22396017,
         "Confirmed": 2536,
@@ -2700,19 +1608,10 @@ const mydata = [{
         "Active": 2467,
         "Admin2": "DeKalb",
         "FIPS": "13089",
-        "Combined_Key": "DeKalb, Georgia, US",
-        "Incident_Rate": 333.993154193945,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84013089,
-        "ISO3": "USA"
+        "Combined_Key": "DeKalb, Georgia, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1975,
-        "Province_State": "New York",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 43.00491923,
         "Long_": -76.19971155,
         "Confirmed": 1265,
@@ -2721,19 +1620,10 @@ const mydata = [{
         "Active": 1196,
         "Admin2": "Onondaga",
         "FIPS": "36067",
-        "Combined_Key": "Onondaga, New York, US",
-        "Incident_Rate": 274.68470972449,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84036067,
-        "ISO3": "USA"
+        "Combined_Key": "Onondaga, New York, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 126,
-        "Province_State": "Massachusetts",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.72980578,
         "Long_": -70.28854339,
         "Confirmed": 1068,
@@ -2742,19 +1632,10 @@ const mydata = [{
         "Active": 1000,
         "Admin2": "Barnstable",
         "FIPS": "25001",
-        "Combined_Key": "Barnstable, Massachusetts, US",
-        "Incident_Rate": 501.431992112306,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84025001,
-        "ISO3": "USA"
+        "Combined_Key": "Barnstable, Massachusetts, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2401,
-        "Province_State": "Tennessee",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 35.1864775,
         "Long_": -89.89692423,
         "Confirmed": 3260,
@@ -2763,19 +1644,10 @@ const mydata = [{
         "Active": 3192,
         "Admin2": "Shelby",
         "FIPS": "47157",
-        "Combined_Key": "Shelby, Tennessee, US",
-        "Incident_Rate": 347.857263280998,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84047157,
-        "ISO3": "USA"
+        "Combined_Key": "Shelby, Tennessee, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2484,
-        "Province_State": "Ohio",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 40.81482476,
         "Long_": -81.36437305,
         "Confirmed": 500,
@@ -2784,19 +1656,10 @@ const mydata = [{
         "Active": 433,
         "Admin2": "Stark",
         "FIPS": "39151",
-        "Combined_Key": "Stark, Ohio, US",
-        "Incident_Rate": 134.914167606569,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84039151,
-        "ISO3": "USA"
+        "Combined_Key": "Stark, Ohio, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1489,
-        "Province_State": "Florida",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 26.58410348,
         "Long_": -81.88399313,
         "Confirmed": 1268,
@@ -2805,19 +1668,10 @@ const mydata = [{
         "Active": 1203,
         "Admin2": "Lee",
         "FIPS": "12071",
-        "Combined_Key": "Lee, Florida, US",
-        "Incident_Rate": 164.552017514149,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84012071,
-        "ISO3": "USA"
+        "Combined_Key": "Lee, Florida, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 1814,
-        "Province_State": "Pennsylvania",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 41.05934058,
         "Long_": -75.34031025,
         "Confirmed": 1218,
@@ -2826,19 +1680,10 @@ const mydata = [{
         "Active": 1154,
         "Admin2": "Monroe",
         "FIPS": "42089",
-        "Combined_Key": "Monroe, Pennsylvania, US",
-        "Incident_Rate": 715.330267632186,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84042089,
-        "ISO3": "USA"
+        "Combined_Key": "Monroe, Pennsylvania, US"
     }
 }, {
     "attributes": {
-        "OBJECTID": 2931,
-        "Province_State": "Kansas",
-        "Country_Region": "US",
-        "Last_Update": 1589189554000,
         "Lat": 39.11727348,
         "Long_": -94.76378225,
         "Confirmed": 1078,
@@ -2847,12 +1692,7 @@ const mydata = [{
         "Active": 1014,
         "Admin2": "Wyandotte",
         "FIPS": "20209",
-        "Combined_Key": "Wyandotte, Kansas, US",
-        "Incident_Rate": 651.639071746792,
-        "People_Tested": null,
-        "People_Hospitalized": null,
-        "UID": 84020209,
-        "ISO3": "USA"
+        "Combined_Key": "Wyandotte, Kansas, US"
     }
 }, {
     "attributes": {
