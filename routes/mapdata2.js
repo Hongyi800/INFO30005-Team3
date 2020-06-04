@@ -526,3 +526,5 @@ const mydata =
         {"country":"Berrien, Michigan, US","latitude":41.95447397,"longitude":-86.4131308,"confirmed_cases":391,"death_cases":22},
         {"country":"Cameron, Texas, US","latitude":26.14524221,"longitude":-97.48140372,"confirmed_cases":512,"death_cases":22}
     ];
+
+module.exports = mydata;
