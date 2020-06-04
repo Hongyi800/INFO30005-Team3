@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const countrySchema = new mongoose.Schema({
   id: String,
-  country_name: String,
+  country: String,
   confirmed_case: Number,
-  confirmed_death: Number,
-  Lat: Number,
-  Long_:Number,
+  death_cases: Number,
+  latitude: Number,
+  longitude:Number,
 });
 
 const Country = mongoose.model("country", countrySchema, "country");
