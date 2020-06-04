@@ -27,8 +27,10 @@ const addComment = async (req, res) => {
     try {
 
         await comment.save();
-        res.render('initial.pug', {
-            title: 'add comment',
+        const all_comments = await Comment.find();
+        res.render('comment.pug', {
+            title: 'Success',
+            comments: all_comments
         });
     } catch (err) {
         res.status(400);

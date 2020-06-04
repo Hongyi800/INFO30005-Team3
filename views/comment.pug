@@ -10,14 +10,8 @@ block content
                 input(type='text', placeholder='username' name='username' id='username' value="")
                 br
             div
-                label(for='date') Date :&nbsp
-                input(type='date',id='date' value="")
-                br
-                br
-            div
-                label(for='content') Body:&nbsp
-                textarea(type='text' rows="5" cols="30" id='content')
-                br
+                label(for='content') Your Comment:
+                input(type='text', placeholder='content' name='content' id='content' value="")
                 br
             button(type='submit') Add Comment
     div.list
@@ -26,7 +20,7 @@ block content
                 div.left
                 div.right
                     p
-                        |#{comment.username} :
+                        |#{comment.username}:
                         br
                         br
-                        |&nbsp&nbsp&nbsp&nbsp#{comment.content}
+                        |#{comment.content}
