@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const path = require('path');
 
-
 app.set('view engine', 'hbs');
 // test express where the static files are kept
 app.use(express.static(__dirname + '/public'));
@@ -21,7 +20,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('hbs', ejs.renderFile);
 
 app.use(express.static('routes'));
-
 
 const router = require("./routes/route");
 const userRouter = require('./routes/userRouter');
