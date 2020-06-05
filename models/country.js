@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const countrySchema = new mongoose.Schema({
   id: String,
   country: String,
-  confirmed_case: Number,
+  confirmed_cases: Number,
   death_cases: Number,
   latitude: Number,
   longitude:Number,
