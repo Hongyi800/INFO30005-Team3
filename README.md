@@ -20,3 +20,8 @@
 #### 4) Functionality 3: News & Information
 ##### For the last functionality, users could find the news and information about basic knowledge and protective measures for coronavirus when clicking ‘News & Information’ on the homepage of our website. Setting this functionality may help users understand the epidemic situation and protect themselves in a timely and effective manner.
 ##### News & Information URL: https://info30005-assi2.herokuapp.com/information
+
+
+#### 5) test: 
+##### Integration testing is written in order to test the system’s functionality.
+##### We can run tests through the invocation of the command 'npm test'
