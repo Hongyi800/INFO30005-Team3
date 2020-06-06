@@ -12,8 +12,8 @@ const userLogin = async(req, res) => {
         User.find({username:username,password:password})
             .then((data)=> {
                 if(data.length>0){
-                    // req.session.userinfo = username;
-                    // req.app.locals["username"] = username;
+                    req.session.userinfo = username;
+                    req.app.locals["username"] = username;
                     res.render("index.pug" , {
                         title: 'Login Success!',
                         h1: 'Welcome!',
