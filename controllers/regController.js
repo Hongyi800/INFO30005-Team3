@@ -24,7 +24,8 @@ const userRegister = async(req, res, session) => {
                 .catch((err)=>{
                     res.render("loginError.pug" , {
                         title: 'Register ERROR!',
-                        h1: 'ERROR, please try again!'
+                        h1: 'ERROR, please try again!',
+                        name: username
                     })
                 })
         }else{
