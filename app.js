@@ -15,9 +15,36 @@ require('./models/db.js');
 // use the body-parser middleware, which parses request bodies into req.body
 // support parsing of json
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.engine('hbs', ejs.renderFile);
+
+var session = require("express-session");
+app.use(session({
+  secret: "login",
+  cookie: {maxAge: 60*1000*30},
+  resave: true,
+  saveUninitialized: false
+}));
+
+app.get("/comment", function (req, res, next) {
+  if(req.session.userinfo){
+    next();
+  }else{
+    res.render('index.pug', {
+      title: 'Failed',
+      h1: "Please Login first!"
+    });
+  }
+});
+
+app.get("/out", function (req, res) {
+  req.session.destroy(); //log out
+  res.render("index.pug", {
+    title: "Coronavirus Defenders",
+    h1: "Coronavirus Defenders"
+  });
+});
 
 app.use(express.static('routes'));
 
