@@ -27,21 +27,21 @@ app.use(session({
   saveUninitialized: false
 }));
 
-app.get("/comment", function (req, res, next) {
-  if(req.session.userinfo){
-    next();
-  }else {
-    res.redirect("/login");
-  }
-});
-
-app.get("/logout", function (req, res) {
-  req.session.destroy(); //log out
-  res.render("index.pug", {
-    title: "Coronavirus Defenders",
-    h1: "Coronavirus Defenders"
-  });
-});
+// app.get("/comment", function (req, res, next) {
+//   if(req.session.userinfo){
+//     next();
+//   }else {
+//     res.redirect("/login");
+//   }
+// });
+//
+// app.get("/logout", function (req, res) {
+//   req.session.destroy(); //log out
+//   res.render("index.pug", {
+//     title: "Coronavirus Defenders",
+//     h1: "Coronavirus Defenders"
+//   });
+// });
 
 app.use(express.static('routes'));
 
