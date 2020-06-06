@@ -19,30 +19,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', path.join(__dirname, 'views'));
 app.engine('hbs', ejs.renderFile);
 
-var session = require("express-session");
-app.use(session({
-  secret: "login",
-  cookie: {maxAge: 60*1000*30},
-  resave: true,
-  saveUninitialized: false
-}));
-
-app.get("/comment", function (req, res, next) {
-  if(req.session.userinfo){
-    next();
-  }else{
-    res.redirect("/login");
-  }
-});
-
-app.get("/logout", function (req, res) {
-  req.session.destroy(); //log out
-  res.render("index.pug", {
-    title: "Coronavirus Defenders",
-    h1: "Coronavirus Defenders"
-  });
-});
-
 app.use(express.static('routes'));
 
 const router = require("./routes/route");
@@ -61,7 +37,6 @@ app.use("/country-management", countryRouter);
 app.listen(process.env.PORT || 3000, () => {
   console.log("The library is running!");
 });
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
