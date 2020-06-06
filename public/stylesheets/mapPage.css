@@ -1,5 +1,6 @@
 .details { grid-area: details;}
 .container { grid-area: container; }
+.input-card{ grid-area: input-card; }
 
 
 *{
@@ -16,10 +17,13 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-            'container container details'
+            'container container input-card'
             'container container details'
             'container container details';
     grid-gap: 20px;
+}
+.input-card{
+    text-align: center;
 }
 
 .details{

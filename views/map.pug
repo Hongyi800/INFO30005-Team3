@@ -46,8 +46,21 @@ header
             p
                 | You can scroll the mouse to enlarge or reduce the map,
                 | or you can drag the mouse and click the point on the country/city you would like to view
+        #control_container
+        .input-card(style='width:24rem;')
+            h4 Control Table
+            .input-item
+                label Marker:
+                button#add-marker.btn(style='margin-right:1rem;') add Marker
+                button#remove-marker.btn remove Marker
+            .input-item
+                label Circle:
+                button#add-circle.btn(style='margin-right:1rem;') add Circle
+                button#remove-circle.btn remove Circle
         #map.container
             p(style='width: 1024px; height: 720px') This is a map container
+
+
 
     script(type='text/javascript').
         const mymap = new AMap.Map('map',{
