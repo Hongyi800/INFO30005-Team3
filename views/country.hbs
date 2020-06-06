@@ -35,10 +35,10 @@
         </p>
         <ul class="status">
             <li>
-                <a href="country-management">World status</a>
+                <a href="/country-management">World status</a>
             </li>
         </ul>
-        <p> <br><br><br><br> </p>
+        <p> <br><br> </p>
         <h2>Epidemic Map</h2>
         <p>Here is the epidemic map for COVID-19 around the world.</p>
         <p>
@@ -54,7 +54,7 @@
         </p>
     </div>
 
-    <div class="input-card" style="width:24rem;">
+    <div class="input-card" >
         <h2>Layer Controller</h2>
         <div class="input-item">
             <label>Confirmed Cases: </label>
@@ -78,53 +78,6 @@
         zoom: 3,
         center: [8,17],
         lang:'en'
-    })
-    const mylayer = new Loca.PointLayer({
-        map: mymap,
-        eventSupport:true
-    })
-    mylayer.setData(mydata,{
-        type: 'json',
-        lnglat:function(obj){
-            return [obj.value.longitude, obj.value.latitude]
-        }
-    })
-    mylayer.setOptions({
-        unit: 'px',
-        style: {
-            radius:(obj)=>{
-                const num = obj.value.confirmed_cases;
-                if(num >= 1000000) return 30;
-                if(num>= 100000) return 30;
-                if(num>= 70000) return 20;
-                if(num>= 50000) return 20;
-                if(num>= 30000) return 10;
-                else return 10;
-            },
-            color:(obj)=>{
-                const num = obj.value.confirmed_cases;
-                if(num >= 1000000) return '#ff0000';
-                if(num>= 100000) return '#ff0000';
-                if(num>= 50000) return '#ff8800';
-                if(num>= 40000) return '#ff8800';
-                if(num>= 30000) return '#ffaa00';
-                else return '#ffaa00';
-            }
-        },
-        borderWidth: 0.5,
-        borderColor: '#0000ff'
-    })
-     mylayer.render();
-    //step5
-    mylayer.on('click',function(ev){
-        const rawData = ev.rawData;
-        console.log(rawData);
-        const originalEvent = ev.originalEvent;
-        openInfoWin(mymap,originalEvent,{
-            "Country Name":rawData.country,
-            "Confirmed Case":rawData.confirmed_cases,
-            "Location":ev.lnglat
-        })
     })
 
     const mylayer2 = new Loca.PointLayer({
@@ -174,7 +127,53 @@
             "Location":ev.lnglat
         })
     })
-
+    const mylayer = new Loca.PointLayer({
+        map: mymap,
+        eventSupport:true
+    })
+    mylayer.setData(mydata,{
+        type: 'json',
+        lnglat:function(obj){
+            return [obj.value.longitude, obj.value.latitude]
+        }
+    })
+    mylayer.setOptions({
+        unit: 'px',
+        style: {
+            radius:(obj)=>{
+                const num = obj.value.confirmed_cases;
+                if(num >= 1000000) return 30;
+                if(num>= 100000) return 30;
+                if(num>= 70000) return 20;
+                if(num>= 50000) return 20;
+                if(num>= 30000) return 10;
+                else return 10;
+            },
+            color:(obj)=>{
+                const num = obj.value.confirmed_cases;
+                if(num >= 1000000) return '#ff0000';
+                if(num>= 100000) return '#ff0000';
+                if(num>= 50000) return '#ff8800';
+                if(num>= 40000) return '#ff8800';
+                if(num>= 30000) return '#ffaa00';
+                else return '#ffaa00';
+            }
+        },
+        borderWidth: 0.5,
+        borderColor: '#0000ff'
+    })
+    mylayer.render();
+    //step5
+    mylayer.on('click',function(ev){
+        const rawData = ev.rawData;
+        console.log(rawData);
+        const originalEvent = ev.originalEvent;
+        openInfoWin(mymap,originalEvent,{
+            "Country Name":rawData.country,
+            "Confirmed Case":rawData.confirmed_cases,
+            "Location":ev.lnglat
+        })
+    })
 
     //step6
     mymap.on('click',function(ev){

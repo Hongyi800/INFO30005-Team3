@@ -26,6 +26,25 @@
     text-align: center;
 }
 
+#add-marker,#remove-marker{
+    padding: 10px 15px;
+    border: 1px solid orangered;
+    background-color: white;
+    color: orangered;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#add-circle,#remove-circle{
+    padding: 10px 15px;
+    border: 1px solid seagreen;
+    background-color: white;
+    color: seagreen;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
 .details{
     border: black 5px;
     width: 470px;
@@ -36,10 +55,7 @@
 .details h2{
     text-align: center;
 }
-ul.status{
-    text-align: center;
-    list-style-type:none;
-}
+
 
 .container{
     width:100%;
@@ -52,8 +68,12 @@ ul{
     margin-top: 25px;
 }
 
-ul.status{
-    float: left;
+ul.status {
+    float: none;
+    list-style: none outside none;
+    margin:0;
+    padding: 0;
+    text-align: center;
 }
 
 ul li{
