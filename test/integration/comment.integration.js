@@ -31,7 +31,7 @@ describe('integration test', function() {
     describe('addComment', function(){
         context('check if we can add a comment', function(){
             it('post an comment', async function(){
-                let newComment = {username:'YZhao000', content:'Check...'};
+                let newComment = {username:'@YZhao000', content:'test...'};
                 const res = await supertest(app)
                     .post('/comment')
                     .send(newComment);
