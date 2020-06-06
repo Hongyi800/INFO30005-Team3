@@ -1,12 +1,11 @@
 extends default
 
 block content
-
     div.box
         h3 Comment Box
         form(method='POST' action='/comment')
             div
-                label(for='username') Nickname:&nbsp&nbsp
+                label(for='username') Nickname:
                 input(type='text', placeholder='username' name='username' id='username' value="")
                 br
             div
@@ -22,5 +21,5 @@ block content
                     p
                         |#{comment.username}:
                         br
-                        br
                         |#{comment.content}
+                        br

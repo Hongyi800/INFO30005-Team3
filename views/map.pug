@@ -2,7 +2,7 @@ doctype html
 head
     meta(charset='utf-8')
     meta(name='viewport' content='initial-scale=1.0, user-scalable=no')
-    script(src='mapdata2.js')
+    script(src='mapdata.js')
     script(src='InfoWin.js')
     title World Map
 header
@@ -48,6 +48,7 @@ header
                 | or you can drag the mouse and click the point on the country/city you would like to view
         #map.container
             p(style='width:1500px; height: 750px') This is a map container
+
     script(type='text/javascript').
         const mymap = new AMap.Map('map',{
             zoom: 4.5,
