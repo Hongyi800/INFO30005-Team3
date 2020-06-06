@@ -31,14 +31,11 @@ app.get("/comment", function (req, res, next) {
   if(req.session.userinfo){
     next();
   }else{
-    res.render('index.pug', {
-      title: 'Failed',
-      h1: "Please Login first!"
-    });
+    res.redirect("/login");
   }
 });
 
-app.get("/out", function (req, res) {
+app.get("/logout", function (req, res) {
   req.session.destroy(); //log out
   res.render("index.pug", {
     title: "Coronavirus Defenders",
