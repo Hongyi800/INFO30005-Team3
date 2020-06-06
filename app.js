@@ -30,7 +30,7 @@ app.use(session({
 app.get("/comment", function (req, res, next) {
   if(req.session.userinfo){
     next();
-  }else{
+  }else {
     res.redirect("/login");
   }
 });

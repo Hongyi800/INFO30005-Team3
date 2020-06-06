@@ -18,12 +18,13 @@ const userRegister = async(req, res, session) => {
                     res.render("index.pug" , {
                         title: 'Register Success!',
                         h1: 'Register Success, Welcome!',
+                        name: username
                     })
                 })
                 .catch((err)=>{
                     res.render("loginError.pug" , {
                         title: 'Register ERROR!',
-                        h1: 'ERROR, please try again!',
+                        h1: 'ERROR, please try again!'
                     })
                 })
         }else{
