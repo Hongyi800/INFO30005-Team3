@@ -1,5 +1,6 @@
 const User = require('../models/user');
 
+// function to store user registration data
 const userRegister = async(req, res, session) => {
     //get data
     let username = req.body.username;

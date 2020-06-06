@@ -1,4 +1,3 @@
-//var mongoose = require('mongoose');
 exports.renderHomePage = (req, res) =>{
     res.render("index.pug", {
         title: "Coronavirus Defenders",

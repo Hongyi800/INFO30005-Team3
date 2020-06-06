@@ -1,5 +1,6 @@
 const User = require('../models/user');
 
+// function to handle user login
 const userLogin = async(req, res) => {
     let username = req.body.username;
     let password = req.body.password;
